@@ -1,0 +1,498 @@
+/*KEY FRAMES */
+@-webkit-keyframes tab-animate 
+					{
+						from {top : -75%;}
+						to {top : 15%;}
+						from{opacity : 0;}
+						to {opacity : 1;}
+					}
+	/* Standard syntax */
+@keyframes tab-animate 
+					{
+						from {top : -75%;}
+						to {top : 15%;}
+						from{opacity : 0;}
+						to {opacity : 1;}
+					}					
+
+
+
+
+@-webkit-keyframes img-animate
+					{
+						from{opacity : 0;}
+						to {opacity : 1;}
+					}
+	/* Standard syntax */
+@keyframes img-animate
+					{
+						
+						from{opacity : 0;}
+						to {opacity : 1;}
+					}
+
+
+
+
+					
+@keyframes tab-animate-reverse 
+					{
+						from {top : 15%;}
+						to {top : -75%;}
+						from{opacity : 1;}
+						to {opacity : 0;}
+					}
+
+@-webkit-keyframes tab-animate-reverse 
+					{
+						from {top : 15%;}
+						to {top : -75%;}
+						from{opacity : 1;}
+						to {opacity : 0;}
+					}
+
+			/* Standard syntax */
+
+
+@font-face 
+			{
+				font-family: title-font ;
+				src : url("font-family/Aldrich-Regular.ttf");
+			}	
+
+h2
+	{
+		font-family : title-font;
+		font-size : 1.5em;
+		}
+li ,ul
+		{
+		 list-style-type: none;
+		}
+
+body	
+	{
+		margin : 0;
+		padding : 0;
+		overflow-x : hidden;
+		width : 100%;
+		height : 100%;
+		background-color : black;
+	}
+#head-image-container img 	{
+		width : 100%;
+		height : 100%;
+	}
+
+.grid li  a img 
+	{
+		opacity : 0;
+		
+			-webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+			-webkit-animation-fill-mode: forwards;  /* Chrome, Safari, Opera */
+			
+			
+			animation-duration: 2s;  /*standard syntax */
+			animation-fill-mode: forwards;  /*standard syntax */
+	}
+
+#head-image-container
+					{
+						/* background-image : url("images/head/imgjpg");*/
+						background-repeat : no-repeat;
+						background-size : 100%;
+						background-position : center;
+						position : absolute;
+						width : 100%;
+						height : 100%;
+						background-color : black;
+						
+					}
+					
+#head-tag
+					{
+						cursor : auto;
+						position : absolute;
+						width : 20%;
+						height : 7%;
+						text-align : center;
+						left : 40%;
+						top : 46.5%;
+						border : 2px solid white;
+						color : white;
+					}
+#head-tag h2
+					{
+					 width : auto;
+					 height :auto;
+					}
+
+#down-arrow
+					{
+						position : absolute;
+						width : 4%;
+						height : 7%;
+						
+						bottom : 4%;
+						left : 48%;
+					}
+				
+										
+#main	
+					{
+						position : absolute;
+						top : 125%;
+						background-color : black;
+						
+						
+						
+						width : 100%;
+						
+							
+						
+					}
+					
+#header-tabs					
+					{
+						position : absolute;
+						width : 100%;
+						height : 25%;
+						display : block;
+						top : 100%;
+						z-index : 2;
+						background-color : black;
+						transition: all 0s ease-in-out;
+					}
+#fixed-header
+					{
+						position : fixed;
+						display : none;
+						background-color :black;
+						width : 100%;
+						z-index : 2;
+						height : 18%;
+						
+						transition: all 0s ease-in-out;
+						
+					}
+#fixed-header button
+					{
+						display : block;	
+					}
+#grid
+					{		
+						position : relative;
+						margin: 0 auto;
+						padding : 0;
+						-moz-column-count: 3;
+						-moz-column-gap: 10px;
+						-webkit-column-count: 3;
+						-webkit-column-gap: 10px;
+						column-count: 3;
+						column-gap: 10px;
+						width:95%;
+						
+					}
+
+#grid li	img			{
+						display: inline-block;
+						margin : 10px 10px 10px 10px;
+						width: 100%;
+						cursor : zoom-in;
+					}
+	
+#footer 
+					{
+						 background-image : url("images/elements/metal-brushed.png");
+						
+						position : absolute;
+						width : 100%;
+						height : 3%;
+						background-color : grey;
+						z-index : 999;
+					}
+#full-res-container
+					{
+						z-index : 4;
+						display:none;
+						position : fixed;
+						width : 100%;
+						height : 100%;
+						background-color : rgba(0,0,0,.9);
+					}
+#full-res
+					{
+						z-index : 5;
+						position : fixed;
+						width : 80%;
+						height : 80%;
+						
+						top : 10%;
+						left : 10%;
+						background-image : url("");
+						background-repeat : no-repeat;
+						background-size : contain;
+						background-position : center;
+					}
+#full-res-close
+					{	
+						z-index : 5;
+						background-image : url("images/logos/close.png");
+						background-repeat : no-repeat;
+						background-size : contain;
+						background-position : center;
+						cursor : pointer;
+						position : absolute;
+						width : 4%;
+						height : 6%;
+						right : 4%;
+						top :6%;
+			
+						opacity : 1;	
+					}
+					
+#copyright-tag
+					{
+						position : relative;
+						color : white;
+						font-family: title-font ;
+						width : 100%;
+						text-align : center;
+						top : 50%;
+					}
+#com-tag
+					{
+						font-family: title-font ;
+						position : absolute;
+						right : 8%;
+						top : 60%;
+						color : white;
+					}
+#com-logo
+					{
+						background-image : url("images/logos/gw.png");
+						background-repeat : no-repeat;
+						background-size : contain;
+						background-position : center;
+						position : absolute;
+						width : 15%;
+						height : 50%;
+	
+						right : -3%;
+					}
+#tab-container	
+					{
+						display : flex;
+						justify-content : space-between;
+						position : fixed;
+						width : 30%;
+						height : 10%;
+						
+						top : 5%;
+						right : 0;
+					}
+.tab-con
+		{
+			font-family: title-font ;
+			text-align : center;
+			height : 100%;
+			width : 100%;
+			color : white;
+			cursor : pointer;
+		}
+		
+.btn {
+	border: none;
+	font-family: inherit;
+	font-family: title-font ;
+	color: white;
+	background: none;
+	cursor: pointer;
+	padding: 10px 30px;
+	
+	top : 35%;
+	
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: absolute;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	
+}
+
+		.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+
+
+/* Button 1 */
+.btn-1 {
+	border: 2px solid white;
+	color: white;
+}
+
+
+.btn-1a:hover,
+.btn-1a:active {
+	color: black;
+	background: white;
+}
+
+#button-1
+	{
+		right : 18.5%;
+		display : none;
+	}
+#button-2
+	{
+		right : 2.5%;
+		display : none;
+	}
+
+#header-tabs-tag
+	{
+		cursor : normal;
+		position : absolute;
+		width : 23%;
+		height : 33%;
+		text-align : center;
+		left : 38%;
+		top : 30%;
+		border : 2px solid white;
+		color : white;
+		
+	}
+
+#social-site-bar		
+		{
+			position : absolute;
+			left :5%;
+			top : 36%;
+			bottom :39%;
+			right : 75%;
+		
+			display : flex;
+			justify-content : space-between;
+		}
+#fb-logo
+		{
+			
+			background-image : url("images/logos/fb.png");
+			background-repeat : no-repeat;
+			background-size : contain;
+			background-position : center;
+		}
+#twitter-logo
+		{
+			background-image : url("images/logos/twitter.png");
+			background-repeat : no-repeat;
+			background-size : contain;
+			background-position : center;
+		}
+#instagram-logo
+		{	
+			background-image : url("images/logos/insta.png");
+			background-repeat : no-repeat;
+			background-size : contain;
+			background-position : center;
+		}
+.social-logo
+		{
+			left : 1%;
+			right : 1%;
+			height : 100%;
+			width : 25%;
+			
+		}	
+
+#about-tab
+		{
+			position : fixed;
+			width : 30%;
+			height : 60%;
+			background-color : white;
+			z-index : 4;
+			right : 1.5%;
+			top : -75%;
+			border : 1px solid black;	
+			font-family: title-font ;
+			font-size : 1em;
+			display : none;
+			overflow-y : auto;
+			text-align : center;
+			padding-left : 20px;
+			padding-right : 20px;
+			padding-top : 20px;
+			opacity : 1;
+			
+			-webkit-animation-name: tab-animate; /* Chrome, Safari, Opera */
+			-webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+			-webkit-animation-fill-mode: forwards;  /* Chrome, Safari, Opera */
+			
+			animation-name: tab-animate; /*standard syntax */
+			animation-duration: 1s;  /*standard syntax */
+			animation-fill-mode: forwards;  /*standard syntax */
+		}
+#contact-tab
+		{
+			position : fixed;
+			width : 30%;
+			height : 60%;
+			background-color : white;
+			z-index : 4;
+			right : 1.5%;
+			top : -75%;
+			border : 1px solid black;	
+			font-family: title-font ;
+			font-size : 1em;
+			display : none;
+			overflow-y : auto;
+			text-align : center;
+			padding-left : 20px;
+			padding-right : 20px;
+			padding-top : 20px;
+			opacity : 1;
+			
+			-webkit-animation-name: tab-animate; /* Chrome, Safari, Opera */
+			-webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+			-webkit-animation-fill-mode: forwards;  /* Chrome, Safari, Opera */
+			
+			animation-name: tab-animate; /*standard syntax */
+			animation-duration: 1s;  /*standard syntax */
+			animation-fill-mode: forwards;  /*standard syntax */
+		}	
+#close-about-tab
+		{	
+			background-image : url("images/logos/close-black.png");
+			background-repeat : no-repeat;
+			background-size : contain;
+			background-position : center;
+			position : absolute;
+			width : 3%;
+			height : 3%;
+			cursor : pointer;
+			right : 2%;
+			top : 2%;
+		}
+#close-contact-tab
+		{	
+			background-image : url("images/logos/close-black.png");
+			background-repeat : no-repeat;
+			background-size : contain;
+			background-position : center;
+			position : absolute;
+			width : 3%;
+			height : 3%;
+			cursor : pointer;
+			right : 2%;
+			top : 2%;
+		}		
