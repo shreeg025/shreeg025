@@ -1,0 +1,7214 @@
+html 
+{
+	  overflow-x: hidden; 
+    overflow-y: hidden;
+    margin : 0;
+	padding :0;
+    
+}
+
+body 
+{
+	padding :0
+	margin : 0;
+	background :black;
+}
+@font-face 
+			{
+				font-family: nav-font;
+				src: url("../font-family/Squ721Rm.ttf");
+			}
+@font-face 
+			{
+				font-family: proj_1_font_1;
+				src: url("../font-family/Aldrich-Regular.ttf");
+			}
+@font-face 
+			{
+				font-family: proj_2_font_1;
+				src: url("../font-family/AlmendraDisplay-Regular.ttf");
+			}			
+@font-face 
+			{
+				font-family: desc-font;
+				src: url("../font-family/newsgotl.ttf");
+			}
+@font-face 
+			{
+				font-family: game-font;
+				src: url("../font-family/OLD.ttf");
+			}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+    }
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+    }
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+    }
+	
+@keyframes rotateIT 
+{
+    0% {transform: rotate(0deg);}
+	100%{transform: rotate(360deg);}
+	
+}
+@-webkit-keyframes rotateIT {
+    from {transform: rotate(0deg) }
+    to {transform: rotate(360deg) }
+} 
+
+
+	
+.typed-cursor{
+        opacity: 1;
+        font-size: 600%;
+		font-weight : bolder;
+		color :white;
+        -webkit-animation: blink 0.7s infinite;
+        -moz-animation: blink 0.7s infinite;
+        -ms-animation: blink 0.7s infinite;
+        -o-animation: blink 0.7s infinite;
+        animation: blink 0.7s infinite;
+    }
+#loading_screen
+{
+	position : fixed;
+	z-index :999999;
+	width : 100%;
+	height : 100%;
+	background :black;
+	display : block;
+	
+}
+#Load_E
+{
+	width : 6%;
+	height : 16%;
+	
+	position :absolute;
+	top : 32.5%;
+	left :36%;
+	
+	background-image: url('../images/utils/logo_E.png');
+	background-position : center;
+	background-size : contain;
+	background-repeat  : no-repeat;
+}
+#Load_O
+{
+	width : 16%;
+	height : 25%;
+	
+	position :absolute;
+	top : 27%;
+	left :42%;
+	
+	background-image: url('../images/utils/logo_O_orange_R.png');
+	background-position : center;
+	background-size : contain;
+	background-repeat  : no-repeat;
+	
+	-webkit-animation: rotateIT 2s infinite;
+        -moz-animation: rotateIT 0.7s infinite;
+        -ms-animation: rotateIT 0.7s infinite;
+        -o-animation: rotateIT 0.7s infinite;
+     animation-name: rotateIT;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+	transition : 1s ease-in-out;
+}
+#Load_S
+{
+	width : 5%;
+	height : 14%;
+
+	position :absolute;
+	top : 33%;
+	left :58%;
+	
+	background-image: url('../images/utils/logo_S.png');
+	background-position : center;
+	background-size : contain;
+	background-repeat  : no-repeat;
+}
+
+#loading
+{
+	position :absolute;
+	bottom : 5%;
+	color : white;
+	font-family : nav-font;
+	font-size : 280%;
+	font-weight : normal;
+	left :43%;
+	width : 100%;
+	height : auto;
+	top : 52%;
+}
+#section_1
+{
+
+	background-image : url('../images/utils/home_BG_1.jpg');
+	background-position : center;
+	background-size : 100% 100%;
+	background-repeat  : no-repeat;
+	 padding-top : 22%;
+	 transition : background ease-out 2.5s;
+}
+#section_1 h1
+{
+	display :inline;
+	font-family: nav-font;
+	color :white;
+	
+}
+#section_1  h1:nth-child(1) {
+    font-size : 280%;
+}
+#section_1  h1:nth-child(2) {
+     font-size :480%;
+	 padding-left :.5%;
+}
+#logo_id
+{
+	width : 6%;
+	height : 100%;
+	float :left;
+	margin-top : .8%;
+	margin-left : 1%;
+	transition : all ease .5s;
+}
+#logo_id img
+{
+	width : 100%;
+	height : 100%;
+	cursor : pointer;
+}
+#section_2
+{
+	background-image : url('../images/utils/home_WWD_BG.jpg');	
+	
+	background-position : center;
+	background-size : 100% 100%;
+	background-repeat  : no-repeat;
+	padding-top : 4%;
+}
+
+#what_we_do_content h1
+{
+	font-family : nav-font;	
+	font-size : 250%;
+	
+	color : white;
+	font-weight: normal;
+}
+#what_we_do_content p
+{
+	padding-left : 18%;
+	padding-right :18%;
+	font-family : desc-font;
+	color : white;
+	font-size : 180%;
+}
+#what_we_do_content
+{
+	position : relative;
+}
+#wwd_tabs
+{
+	position : relative;
+	padding-top : 2%;
+	padding-bottom : 2%;
+	
+	height : auto;
+	width : 85%;
+	margin-left : 7.5%;
+	display : flex;
+}
+.wwd_tab_container
+{
+	width :30%;
+	height : 100%;
+
+	margin-left :1.5%;
+	margin-right : 1.5%;
+	margin-top : 1.5%;
+	text-align : center;
+}
+.wwd_tab_container h3
+{
+	font-family : nav-font;
+	color : white;
+	font-size : 180%;
+	line-height :0;
+}
+.wwd_tab_container p
+{
+	font-family : desc-font;
+	font-size : 150%;
+	color : white;
+}
+
+#section_3
+{
+	background-image : url('../images/utils/home_services_BG.jpg');
+	background-position : center;
+	background-size : 100% 100%;
+	background-repeat  : no-repeat;
+	padding-top : 6%;
+	
+}
+#services_content
+{
+	position :relative;
+}
+#services_tab_1
+{
+	width : 85%;
+	height : auto;
+	margin-left : 7.5%;
+	display : flex;
+	flex-direction : row;
+	position : relative;
+	
+	
+	
+}
+#services_tab_1 h3
+{
+	font-family :nav-font;
+	font-weight : normal;
+	color :white;
+	font-size : 150%;
+	line-height : 0;
+}
+#services_tab_1 p
+{
+	font-family : desc-font;
+	color :white;
+	font-size : 120%;
+}
+#services_tab_2
+{
+	width : 85%;
+	height : auto;
+	margin-left : 7.5%;
+	display : flex;
+	flex-direction : row;
+	position : relative;
+	
+	
+}
+#services_tab_2 h3
+{
+	font-family :nav-font;
+	font-weight : normal;
+	color : white;
+		font-size : 150%;
+		line-height : 0;
+}
+#services_tab_2 p
+{
+	font-family : desc-font;
+	color :white;
+	font-size : 120%;
+}
+.services_tabs_image img
+{
+		height :18%;
+		width : 18%;
+}
+.services_tabs_image
+{
+	position :relative;
+	width : 100%;
+	
+	min-height : 20%;
+	
+	height : auto;
+}
+.services_tabs
+{
+	width : 30%;
+	height : auto;
+	text-align : center;
+	
+	margin-left : 1.5%;
+	margin-right : 1.5%;
+	padding-bottom :1%;
+}
+.services_2_tabs
+{
+	width : 30%;
+	height : auto;
+	text-align : center;
+	
+	
+}
+
+#slide_fixed_bg
+{
+	width : 100%;
+	height : 100%;
+	background-image : url('../images/utils/how we work_BG.jpg');
+	background-size: cover;
+	position : absolute;		
+	
+	
+}
+#slide_fixed_bg h3
+{
+	font-family : nav-font;
+	font-size : 250%;
+	color :white;
+	font-weight : normal;
+	text-align : center;
+	padding-top : 5%;
+}
+.slide
+{
+	padding-top : 1.5%;
+	text-align : center;
+}
+#heading_pg_4_0
+{
+	position : relative;
+	top : 12%;
+}
+#content_pg_4_0
+{
+	position : relative;
+	top : 12%;
+	background : rgba(0, 0, 0, 0.5);
+	margin-left : 8%;
+	margin-right : 8%;
+	padding : .5%;
+}
+#img_pg_4_0
+{
+	
+	height : 200px;
+	width : 200px;
+	float : right;
+	margin-top : 4%;
+	margin-right :4%;
+	bottom : 0;
+	border-radius : 200px;
+	background-image : url('../images/utils/folder.png') ;
+	background-repeat : no-repeat;
+	background-size : cover;
+}
+#img_pg_4_1
+{
+	height : 200px;
+	width : 200px;
+	float : right;
+	margin-top : 4%;
+	margin-right :4%;
+	bottom : 0;
+	border-radius : 200px;
+	background-image : url('../images/utils/reunion.png') ;
+	background-repeat : no-repeat;
+	background-size : cover;
+}
+#img_pg_4_2
+{
+	height : 200px;
+	width : 200px;
+	float : right;
+	margin-top : 4%;
+	margin-right :4%;
+	bottom : 0;
+	border-radius : 200px;
+	background-image : url('../images/utils/web.png') ;
+	background-repeat : no-repeat;
+	background-size : cover;
+}
+.hhw h3
+{
+	font-family : nav-font;
+	font-size : 250%;
+	color :white;
+	font-weight : normal;
+	
+}
+
+.hhw p
+{
+	font-family : desc-font;
+	font-size : 180%;
+	
+	text-align : center;
+	font-size : 180%;
+	color :white;
+}
+#section_4 .fp-controlArrow.fp-next
+{
+	top : 30%;
+	right : 20%;
+}
+#section_4 .fp-controlArrow.fp-prev
+{
+	top : 30%;
+	left : 20%;
+}
+#web_hosting_tab
+{
+	margin-left : 15%;
+	margin-right : 5%;
+}
+#support_tab
+{
+	margin-right : 15%;
+	margin-left : 5%;
+}
+#services_content
+{
+	text-align : center;
+	
+}
+#services_content h1
+{
+	font-family : nav-font;
+	color : white;
+	font-size : 250%;
+	font-weight: normal;
+}
+#home_header
+{
+	position : absolute;
+	top :0;
+	width : 100%;
+	height : auto;
+	padding-top : .5%;
+	padding-bottom : .5%;
+	background-color : rgba(0, 0, 0, 0.3);
+	z-index:99;
+	transition : all ease .5s;
+}
+#nav_tabs
+{
+	width : 68%;
+	height : 100%;
+	
+	
+	float : right;
+	display : flex;
+	flex-direction : row;
+	font-family : nav-font;
+	color :white;
+	
+}
+#nav_tabs a 
+{
+	text-decoration : none;
+	color : inherit;
+}
+.header_nav_tabs
+{
+	font-size : 110%;
+	margin-right : 2.5%;
+	margin-left : 2.5%;
+	padding-top : .5%;
+	transition : all ease .5s;
+	}
+.header_nav_tabs h3
+{
+	
+	cursor :pointer;
+}
+
+
+
+
+
+
+
+/* ----------------Game section css defined here-------------------------- */
+#game_section_1
+{
+	background-image : url('../images/utils/gAMES_bg.jpg');
+	background-position : center;
+	background-size : 100% 100%;
+	background-repeat  : no-repeat;
+	padding-top : 6%;
+}
+
+#about_game_content
+{
+	position : relative;
+	width : 70%;
+	height : auto;
+	
+	text-align : center;
+	
+	margin-left :15%;
+}
+#about_game_content	 h1
+{
+	font-family :  nav-font;
+	font-size : 280%;
+	font-weight : normal;
+	color : white;
+}
+#about_game_content	 p
+{
+	font-family :desc-font;
+	font-size : 150%;
+	font-weight : normal;
+	color :white;
+}
+
+
+
+
+#battle_of_champs_container
+{
+	width : 70%;
+	position :relative;
+	
+	margin-top : 8%;
+	margin-left : 10%;
+	padding-left : 5%;
+	padding-right : 5%;
+	text-align :center;
+}
+
+#battle_of_champs_container h2
+{
+	font-family :game-font;
+	font-size :450%;
+	color : #ffe14c;
+	  text-shadow: -3px -3px 0px rgba(255,255,255,0.3), 5px 5px 0px rgba(0,0,0,0.8);
+	  line-height :1;
+}
+
+#battle_of_champs_container p
+{
+	font-family :game-font;
+	color :white;
+	font-size : 150%;
+}
+#content_boc h4
+{
+	font-family :game-font;
+	font-size:180%;
+	color :white;
+}
+
+
+
+
+
+
+
+
+
+
+/* ----------------Contact section css defined here-------------------------- */
+
+
+#contact_section_1
+{
+		background-image : url('../images/utils/contact us_bg.jpg');
+	background-position : center;
+	background-size : 100% 100%;
+	background-repeat  : no-repeat;
+	padding-top : 6%;
+	
+}
+
+#contact_heading
+{
+	position : relative;
+	width :100%;
+	height : auto;
+	padding-left : 10%;
+		
+	
+	display:flex;
+	flex-direction : row;
+}
+#contact_heading u
+{
+	color : white;
+}
+#contact_sent 
+{
+	position :relative;
+	font-family :desc-font;
+	font-size : 120%;
+	line-height : .5;
+
+	padding-top :1%;
+	color :white;
+	font-weight:bold;
+	padding-left : 12%;
+}
+#contact_heading h1
+{
+	font-family : nav-font;
+	color :white;
+	font-weight : normal;
+	font-size : 250%;
+}
+#contact_heading img 
+{
+	position : relative;
+	right : 0;
+	width : 22%;
+	height : 22%;
+	margin-right : 4%;
+	padding-top : 4%;
+}
+#contact_content 
+{
+	position : relative;
+		padding-top : 4%;
+		
+		color : white;
+}
+#contact_content input 
+{
+	width : 40%;
+	background : none;
+	text-decoration : none;
+	border : none;
+	border-bottom : 2px solid white;
+	color :white;
+	font-size : 220%;
+	margin-bottom : 4%;
+		padding-left : 1%;
+		outline : none;
+		padding-bottom :.5%;
+		font-weight : normal;
+}
+#contact_content textarea
+{
+	border : none;
+	outline : none;
+	background :none;
+	font-family : desc-font;
+	font-size : 180%;
+	padding-left : 1%;
+	background :rgba(255, 255, 255, 0.4);
+	color : white;
+	outline : none;
+	width : 40%;
+	height : 170px;
+	padding-top : 1%;
+}
+
+#contact_content h3
+{
+	
+	
+	margin-top : 2%;
+	font-family : nav-font;	
+	font-size : 200%;
+	font-weight : normal;
+	background : rgba(0, 0, 0, 0.4);
+	width : 10%;
+	text-align : center;
+	padding : .5%;
+	border-top :  3px solid rgba(222, 222, 222, 0.5);
+	border-left : 3px solid rgba(222, 222, 222, 0.5);
+	cursor : pointer;
+}
+#contact_content h3:active
+{
+	transition : all ease .5s;
+	
+	border-top :  0;
+	border-left : 0;
+	border-right :  3px solid rgba(222, 222, 222, 0.5);
+	border-bottom : 3px solid rgba(222, 222, 222, 0.5);
+}
+#contact_content  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+  font-family : desc-font;
+}
+#contact_content ::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+   font-family : desc-font;
+}
+#contact_content  :-ms-input-placeholder { /* IE 10+ */
+  color: white;
+   font-family : desc-font;
+}
+#contact_content  :-moz-placeholder { /* Firefox 18- */
+  color: white;
+   font-family : desc-font;
+}
+
+#mail_confirm
+{
+  display : block;
+  position :fixed;
+  z-index : 9;
+  width : 100%;
+  height :auto;
+  background-color : green;
+  top : 15%;
+  font-family :desc-font;
+  font-weight : bold;
+  
+}
+
+#confirm_container
+{
+	display : none;
+}
+
+
+
+
+
+
+
+
+/*-----------------------------------------------ILLUSTRATION PAGE CSS -----------------------------------*/
+
+#illustration_section_1
+{
+	background-image : url('../images/utils/illustration_1_BG.jpg');
+	background-position : center;
+	background-size : 100% 100%;
+	background-repeat  : no-repeat;
+	padding-top : 6%;
+}
+#illustration_section_2
+{
+	background-image : url('../images/utils/Illustration _graphic_BG.jpg');
+	background-position : center;
+	background-size : 100% 100%;
+	background-repeat  : no-repeat;
+	padding-top : 6%;
+}
+
+#artwork_carasouel
+{
+	position : relative;
+	margin-top :5%;
+	
+	margin-left : 10%;
+	width : 80%;
+	height : 80%;
+	display :flex;
+	flex-direction :row;	
+	
+	
+}
+
+#artwork_carasouel img	
+{
+	width : 100%;
+	height :auto;
+	
+	
+	
+}
+#artwork_carasouel img:hover 
+{
+	width : 102%;
+	cursor:pointer;
+	transition : ease-out .5s;
+	box-shadow : 6px 6px 20px;
+}
+.slick-slide {
+    margin: 0 20px;
+	 outline: none;
+  }
+  .slick-list {
+    outline: none;
+}
+.artwork_image
+{
+width : 80%;
+	
+}
+#left_key
+{
+	position :absolute;
+	float : left;
+	top : 50%;
+	left :8%;
+	
+}
+#left_key img 
+{
+	cursor : pointer;
+}
+#right_key
+{
+	position :absolute;
+	float : left;
+	top : 50%;
+	right :8%;
+	
+}
+#right_key img 
+{
+	cursor :pointer;
+}
+
+#full_size_art_work
+{
+	
+	width :100%;
+	height : 100%;
+	display : none;
+	position : fixed;
+	z-index : 999;
+	background : rgba(0,0,0,.7);
+	
+}
+
+#full_image_container
+{
+	position :absolute;
+	top: 50%;
+	transform:translateX(-50%) translateY(-50%);
+	width :35%;
+	left :50%;
+	
+	
+	
+}
+#full_image_container img 
+{
+	width : 100%;
+	height :100%;
+}
+.fadeIn 
+{
+	  -webkit-animation: fadeIn 1.5s; /* Safari 4+ */
+	  -moz-animation:    fadeIn 1.5s; /* Fx 5+ */
+	  -o-animation:      fadeIn 1.5s; /* Opera 12+ */
+	  animation:         fadeIn 1.5s; /* IE 10+, Fx 29+ */
+}
+#logo_section
+{
+	position :relative;
+	width : 90%;
+	height :100%;
+	
+	margin-left : 5%;
+}
+
+/*
+#logo_1
+{
+		position : absolute;
+	top : 42%;
+	left : 30%;
+	z-index:2;
+}
+
+#logo_1 img
+{
+	width : 22%;
+	height : auto;
+}
+#logo_1 img:hover 
+{
+	transition :  .5s;
+	width : 25%;
+	box-shadow : 6px 6px 20px;
+	
+}
+
+#logo_2
+{
+	position : absolute;
+		top : 53.5%;
+	left : 43%;
+	z-index :1;
+}
+#logo_2 img
+{
+	width : 30%;
+	height : auto;
+}
+#logo_2 img:hover 
+{
+	transition :  .5s;
+	width : 33%;
+	box-shadow : 6px 6px 20px;
+	
+}
+#logo_3
+{
+	position : absolute;
+		top :11%;
+	left : 30%;
+	
+	z-index : 3;
+}
+#logo_3 img 
+{
+	width : 22%;
+	height : auto;
+}
+#logo_4
+{
+	position : absolute;
+	top : 33%;	
+	left : 13%;
+	z-index : 0;
+}
+#logo_4 img
+{
+	width : 24%;
+	height : auto;
+}
+#logo_5
+{
+	position : absolute;
+	top : 8%;	
+	left :44%;
+	z-index : 0;
+}
+#logo_5 img
+{
+	width : 50%;
+	height : auto;
+}
+#logo_6
+{
+	position : absolute;
+	left :59%;
+	z-index : 0.5;
+	top : 58%;
+}
+#logo_6 img 
+{
+	width : 44%;
+	height : auto;
+}
+*/
+
+#logo_1
+{
+
+	position : absolute;
+	width :  18.75%;
+	height :33%;
+	background : orange;
+	top : 42%;
+	left : 30%;
+	z-index :1;
+	
+	background-image : url('../images/logos/logo_3.jpg');
+	background-position : center;
+	background-size : 100% 100%;
+	background-repeat  : no-repeat;
+	
+	 -webkit-transition:  .5s ease-out;
+  -moz-transition:  .5s ease-out;
+  -o-transition:  .5s ease-out;
+  transition:  .5s ease-out;
+}
+#logo_1:hover
+{
+	
+	
+	
+	box-shadow : 6px 6px 20px;
+	width :22.75%;
+	height : 40%;
+	left :28%;
+	z-index : 999;
+	cursor:pointer;
+}
+#logo_2
+{
+	position : absolute;
+	width : 23.75%;
+	height : 42%;
+	background :grey;	
+	top : 51.5%;
+	left : 46.75%;
+	z-index :3;
+	
+	background-image : url('../images/logos/logo_6.jpg');
+	background-position : center;
+	background-size : 100% 100%;
+	background-repeat  : no-repeat;
+	
+	-webkit-transition:  .5s ease-out;
+  -moz-transition:  .5s ease-out;
+  -o-transition:  .5s ease-out;
+  transition:  .5s ease-out;
+}
+#logo_2:hover
+{
+	
+	box-shadow : 6px 6px 20px;
+	width :26.75%;
+	height : 47%;
+	left :44.75%;
+	z-index : 999;
+	cursor : pointer;
+}
+#logo_3
+{
+	position : absolute;
+	width : 23.75%;
+	height : 43%;
+	background :pink;	
+	top : 30%;
+	left :10%;
+	z-index:0;
+	
+	background-image : url('../images/logos/Logo_Solo_1.jpg');
+	background-position : center;
+	background-size : 100% 100%;
+	background-repeat  : no-repeat;
+	
+	-webkit-transition:  .5s ease-out;
+  -moz-transition:  .5s ease-out;
+  -o-transition:  .5s ease-out;
+  transition:  .5s ease-out;
+}
+#logo_3:hover
+{
+
+	box-shadow : 6px 6px 20px;
+	width :29.75%;
+	height : 54%;
+	left :8%;
+	z-index : 999;
+	cursor : pointer;
+}
+#logo_4
+{
+	position : absolute;
+	width : 15.75%;
+	height : 30%;
+	background :black;	
+	top : 13%;
+	z-index:2;
+	left : 30%;
+	
+	
+	background-image : url('../images/logos/logo_2.jpg');
+	background-position : center;
+	background-size : 100% 100%;
+	background-repeat  : no-repeat;
+	
+	
+	-webkit-transition:  .5s ease-out;
+  -moz-transition:  .5s ease-out;
+  -o-transition:  .5s ease-out;
+  transition:  .5s ease-out;
+}
+#logo_4:hover
+{
+	
+	box-shadow : 6px 6px 20px;
+	width :19.75%;
+	height : 37%;
+	left :28%;
+	z-index : 999;
+	cursor : pointer;
+}
+
+#logo_5
+{
+	position : absolute;
+	width : 17.75%;
+	height : 32%;
+	background :white;	
+	top : 42%;
+	left : 69.5%;
+	z-index :1; 
+	
+	background-image : url('../images/logos/logo_4.jpg');
+	background-position : center;
+	background-size : 100% 100%;
+	background-repeat  : no-repeat;
+	
+	-webkit-transition:  .5s ease-out;
+  -moz-transition:  .5s ease-out;
+  -o-transition:  .5s ease-out;
+  transition:  .5s ease-out;
+}
+#logo_5:hover
+{
+	
+	box-shadow : 6px 6px 20px;
+	width :21.75%;
+	height : 39%;
+	left :67.5%;
+	z-index : 999;
+	cursor : pointer;
+}
+
+
+#logo_6
+{
+	position : absolute;
+	width : 27.75%;
+	height : 50%;
+	background :white;	
+	z-index :0;
+	left : 45.75%;
+	top : 4%;
+		
+	background-image : url('../images/logos/Logo_1.jpg');
+	background-position : center;
+	background-size : 100% 100%;
+	background-repeat  : no-repeat;
+	
+	-webkit-transition:  .5s ease-out;
+  -moz-transition:  .5s ease-out;
+  -o-transition:  .5s ease-out;
+  transition:  .5s ease-out;
+}
+#logo_6:hover
+{
+	
+	box-shadow : 6px 6px 20px;
+	width :31.75%;
+	height : 57%;
+	left :43.75%;
+	z-index : 999;
+	cursor : pointer;
+}
+
+/*--------------------------------------------------LAB PAGE CSS DEFINED HERE -----------------------------------*/
+
+#full_labbg_fixed
+{
+	position : fixed;
+	background-image : url('../images/utils/Lab_bg.jpg');
+	background-position : center;
+	background-size : 100% 100%;
+	background-repeat  : no-repeat;
+	z-index : -1;
+	width : 100%;
+	height : 100%;
+	top : 0;
+}
+
+
+
+#Lab_section_1
+{
+	z-index : 2;
+}
+
+#Lab_section_1
+{
+	z-index :2;
+}
+
+#lab_main_sec
+{
+	position : relative;
+	margin-top: 7%;
+	
+	width :84%;
+	height :auto;
+	text-align :center;
+	height : auto;
+	margin-left : 8%;
+}
+#lab_heading h2
+{
+	font-family : nav-font;
+	color :white;
+	font-size : 250%;
+	font-weight : normal;
+	
+	padding-bottom :0;
+}
+
+#lab_content p
+{
+	font-family : desc-font;
+	color : white;
+	font-size : 180%;
+}
+#lab_content img 
+{
+	float : right;
+	margin-top : -2%;
+	width : 15%;
+	height : 15%;
+}
+
+#new_to_my_arsenal_tab
+{
+	position : relative;
+	width :84%;
+	height :auto;
+	
+	height : auto;
+	margin-left : 8%;
+	
+	margin-top : 4%;
+}
+
+#new_to_my_arsenal_tab h3
+{
+	font-family : nav-font;
+	color :white;
+	font-size : 200%;
+	font-weight : normal;
+	line-height :0;
+	padding-bottom :0;
+}
+
+#arsenal_topics
+{
+	position : relative;
+	width : 100%;
+	height : auto;
+	display : flex;
+	flex-direction : row;
+	
+}
+.r_topic
+{
+	width : 33%;
+	text-align : center;
+	
+	margin-left :.3%;
+	margin-right : .3%;
+}
+
+.r_topic h5
+{
+	font-family :  nav-font;
+	font-size : 170%;
+	line-height : 0;
+	color : white;
+	font-weight:normal;
+}
+.r_topic p
+{
+	font-family :  desc-font;
+	font-size : 150%;
+	
+	color : white;
+}
+
+
+
+
+
+#experiments_carasouel
+{
+	position : relative;
+	
+	width : 60%;
+	height : auto;
+	margin-left : 20%;
+	
+	
+	
+}
+
+.exp
+{
+	padding-top : 0;
+	width : 15%;
+	height : auto;
+	
+	text-align :center;
+	
+	
+	background : url('../images/utils/lab_bg_ele.PNG') repeat;
+	
+	box-shadow : 6px 6px 25px;
+	margin-bottom :.5%;
+	
+}
+.exp_tint
+{
+		
+	background-color : rgba(0,0,0,0.7);
+}
+.exp h2
+{
+	font-size :200%;
+	font-family : nav-font;
+	color : white;
+	font-weight:normal;
+	padding-top :1%;
+	
+}
+.exp_main_content
+{
+	position : relative;
+	display : flex;
+	flex-direction : row;
+	width : 100%;
+	height : auto;
+	padding-bottom :8%;
+}
+
+.exp_image
+{
+	width : 100%;
+	
+}
+.exp_image img
+{
+	width : 100%;
+	height : 100%;
+}
+.exp_content
+{
+	width :100%;
+	
+	padding-left :2%;
+	padding-right :1%;
+	text-align :left;
+	
+}
+.exp_content p 
+{
+	font-family :desc-font;
+	font-size : 150%;
+	color :white;
+}
+#left_arrow
+{
+	position : absolute;
+	top :40%;
+	left :17%;
+	float : left;
+}
+#left_arrow img 
+{
+	cursor : pointer;
+}
+#right_arrow
+{
+	position : absolute;
+	top :40%;
+	
+	float : right;
+	right :17%;
+}
+#right_arrow img 
+{
+	cursor : pointer;
+}
+/*-----------------------------------------------LOG IN PANEL CSS DEFINED HERE --------------------------------------------*/
+#log_in_container
+{
+	position : fixed;
+	width :100%;
+	height : 100%;
+	background : rgba(0,0, 0,0.8);
+	display : none;
+	z-index :999;
+
+}
+
+#log_in_content
+{
+	width : 40%;
+	height :auto;
+	padding : 2%;
+	padding-top : 0;
+	background:#37a2b2;
+	position : absolute;
+	left : 30%;
+	top: 30%;
+}
+#log_in_content h3 
+{
+	font-family : nav-font;
+	font-weight : normal;
+	color :white;
+	font-size : 180%;
+}
+#user_name 
+{
+	font-family : nav-font;
+	font-weight : normal;
+	color : black;
+	font-size : 130%;
+	width :50%;
+	margin-top : 2%;
+	margin-bottom : 2%;
+	padding-left : .8%;
+}
+#pass_key
+{
+	font-family : nav-font;
+	font-weight : normal;
+	color : black;
+	font-size : 130%;
+	width :50%;
+	margin-top : 2%;
+	margin-bottom : 2%;
+	padding-left : .8%;
+}
+#submit_butt
+{
+	border:none;
+	background : none;
+	outline : none;
+	padding :2%;
+	padding-top : 1%;
+	padding-bottom :1%;
+	background :grey;
+	font-family : nav-font;
+	font-size :150%;
+	color :white;
+	border-bottom:1px solid silver;
+	border-right : 1px solid silver;
+	margin-top : 4%;
+	cursor :pointer;
+}
+#submit_butt:hover 
+{
+	transition : ease-out .2s;
+	background :white;
+	border :none;
+	color :black;
+	border-top:1px solid grey;
+	border-left : 1px solid grey;
+}
+#submit_butt:active
+{
+	background: white;
+}
+/*-----------------------------------------------FOOTER CSS DEFINED HERE---------------------------------------------------*/
+#footer_container
+{
+	position  :absolute;
+	width : 100%;
+	height : auto;
+	bottom : -7%;
+	background : rgba(0,0,0,0.5);
+	color :white;
+	font-family : desc-font;
+	font-weight : bold;
+}
+#footer_container p
+{
+	line-height :0;
+	
+}
+#footer_container:hover
+{	
+	transition : ease-out .8s;
+	bottom : 0%;
+}
+/*-----------------------------------------------PROJECTS PAGE CSS DEFINED HERE -------------------------------------------*/
+
+#proj_1_fixed_bg
+{
+	width : 100%;
+	height : 100%;
+	background-image : url('../images/projects/proj_1/case study_BG.jpg');
+	background-size: cover;
+	position : absolute;		
+	
+	
+}
+#proj_2_fixed_bg
+{
+width : 100%;
+	height : 100%;
+	background-image : url('../images/projects/proj_2/proj_2_bg.jpg');
+	background-size: cover;
+	position : absolute;		
+	
+}
+#proj_3_fixed_bg
+{
+width : 100%;
+	height : 100%;
+	background-image : url('../images/projects/proj_3/Proj_3_bg.jpg');
+	background-size: cover;
+	position : absolute;		
+	
+}
+#projects_1_section_1
+{
+	
+	
+}
+#projects_1_section_2
+{
+	
+	
+}
+#projects_1_section_3
+{
+	
+}
+#projects_1_section_1 .fp-controlArrow.fp-prev
+{
+	display : block;
+}
+#projects_1_section_1 .fp-controlArrow.fp-prev
+{
+	display : block;
+}
+	
+#main_dynamic_bgimage_1
+{
+	position : relative;
+	width : 50%;
+	height : 50%;
+	background :black;
+	margin-left : 25%;
+	margin-top : 3%;
+	background-image : url('../images/projects/proj_1/snip_2.jpg');
+	background-position : center;
+	background-size : 100% 100%;
+	background-repeat  : no-repeat;
+	box-shadow : 8px 8px 30px;
+}
+#main_dynamic_bgimage_2
+{
+		position : relative;
+	width : 50%;
+	height : 50%;
+	background :black;
+	margin-left : 25%;
+	margin-top : 3%;
+	background-image : url('../images/projects/proj_2/1.PNG');
+	background-position : center;
+	background-size : 100% 100%;
+	background-repeat  : no-repeat;
+	box-shadow : 8px 8px 30px;
+}
+
+#main_dynamic_bgimage_3
+{
+		position : relative;
+	width : 50%;
+	height : 50%;
+	background :black;
+	margin-left : 25%;
+	margin-top : 3%;
+	background-image : url('../images/projects/proj_3/1.PNG');
+	background-position : center;
+	background-size : 100% 100%;
+	background-repeat  : no-repeat;
+	box-shadow : 8px 8px 30px;
+}
+#main_page_content_1
+{
+	position : relative;
+	width : 80%;
+	text-align :center;
+	margin-left :10%;
+	background :rgba(0,0,0,0.5);
+}
+#main_page_content_1 p
+{
+	font-family :desc-font;
+	color :white;
+	font-size : 150%;
+}
+
+#proj_1_heading
+{
+	position :absolute;
+	font-family : nav-font;
+	font-size : 350%;
+	font-weight : normal;
+	text-shadow : 6px 6px 10px black;
+	left :13%;
+	top : 46%;
+	z-index :9;
+	color :white;
+}
+
+#case_study_container_1
+{
+	position :relative;
+	text-align : left;
+	
+	width : 90%;
+	height : auto;
+	padding-left : 5%;
+	padding-right:5%;
+	margin-top :.5%;
+	
+}	
+#case_study_heading_1 h3 
+{
+	font-weight :normal;
+	font-family : nav-font;
+	font-size : 200%;
+	color :white;
+}	
+
+#case_study_content_1 p
+{
+	text-align:left;
+	font-size : 180%;
+	font-family : desc-font;
+	color :white;
+}
+
+#color_augmented_1
+{
+	position : relative;
+	width : 90%;
+	height : auto;
+	
+	padding-left : 5%;
+	padding-right:5%;
+}
+#color_augmented_heading_1 h3
+{
+	position :relative;
+	text-align : left;
+	font-size : 200%;
+	font-family :nav-font;
+	font-weight :normal;
+	color :white;
+}
+#color_augmented_content
+{
+	width :100%;
+	height :auto;
+	display : flex;
+	flex-direction : row;
+	margin-top : 3%;
+}
+.color_pallete
+{
+	position :relative;
+	width : 100px;
+	height : 100px;
+	border-radius : 200px;
+	box-shadow : 6px 6px 25px ;
+	margin-left :2%;
+	margin-right :2%;
+}
+#color_1_1
+{
+	
+	background :white;
+}
+
+#color_1_2
+{
+	background : black;
+}
+
+#font_container
+{
+	position : relative;
+	width : 90%;
+	padding-left : 5%;
+	padding-right:5%;
+	height : auto;
+	
+	margin-top :4%;
+}
+
+
+#font_family_heading_1 h3
+{
+	position :relative;
+	text-align :left;
+	font-family :nav-font;
+	font-size : 200%;
+	font-weight : normal;
+	line-height :0;	
+	color:white;
+}
+
+#font_family_content_1
+{
+	position :relative;
+	text-align :left;
+	display :flex;
+	flex-direction:row;
+	color :white;
+}
+#font_family_content_1 h5:nth-child(1)
+{
+	font-size : 180%;
+	margin-right : 2%;
+	font-family : proj_1_font_1;
+	line-height :0;
+}
+
+#font_family_content_1 h5:nth-child(2)
+{
+	font-size : 180%;
+	font-weight:normal;
+	font-family : proj_1_font_2;
+	line-height:0;
+}
+
+#features_container_1
+{
+	position : relative;
+	width : 90%;
+	padding-left :5%;
+	padding-right : 5%;
+	
+	
+}
+
+#features_heading_1	h3
+{
+	position : relative;
+	font-size:180%;
+	text-align:left;
+	font-family : nav-font;
+	font-weight : normal;
+	color :white;
+}
+
+
+#feature_content_1
+{
+	position :relative;
+	width : 100%;
+	height : auto;
+	display : flex;
+	flex-direction : row;
+}
+.feature
+{
+	width : 23%;
+		display :block;
+	margin-left :1%;
+	margin-right :1%;
+	
+}
+.feature img 
+{
+	width : 23%;
+}
+.feature p
+{
+	font-family : desc-font;
+	font-size : 145%;
+	color :white;
+}
+
+#framework_used_container_1
+{
+	position :relative;
+	width : 90%;
+	padding-left : 5%;
+	padding-right : 5%;
+	
+}
+
+#framework_used_heading_1 h3
+{
+	position : relative;
+	font-size : 180%;
+	text-align :left;
+	font-family : nav-font;
+	font-weight : normal;
+	color :white;
+	width :100%;
+	height :auto;
+	line-height :0;
+}
+#framework_used_content_1 
+{
+	position :relative;
+	height : auto;
+	width : 100%;
+	
+}
+#framework_used_content_1 img 
+{
+	position :absolute;
+	width : 5.5%;
+	left :0;
+}
+
+#conclusion_container_1
+{
+	position :relative;
+	margin-top : 8%;
+	width : 90%;
+	padding-left :5%;
+	padding-right : 5%;
+}
+
+#conclusion_heading_1
+{
+	position :relative;
+	text-align :left;
+}
+
+#conclusion_heading_1 h3 
+{
+	position :relative;
+	font-family :nav-font;
+	font-weight :normal;
+	font-size :180%;
+	color :white;
+}
+#conclusion_content_1 
+{
+	position:relative;
+	width : 100%;
+	height : auto;
+	
+}
+#conclusion_content_1 p
+{
+	font-family :desc-font;
+	font-size : 130%;
+	text-align :left;
+	color :white;
+}
+
+
+#projects_2_section_1
+{
+	
+	
+}
+#projects_2_section_2
+{
+
+}
+
+
+#projects_3_section_1
+{
+	
+}
+#projects_3_section_2
+{
+	
+}
+
+
+
+/*-----------------------------MEDIA QUERIES FOR 1920PXS ---------------------------------------*/
+@media  screen and (max-width: 1920px) 
+{
+ 
+  .header_nav_tabs
+	{
+		font-size :120%;	
+	}
+	#logo_id
+	{
+		width : 7%;
+	}
+	#section_1
+	{
+		padding-top : 22%;
+	}
+	#section_1  h1:nth-child(1) 
+	{
+    font-size : 300%;
+	}
+	#section_1  h1:nth-child(2) 
+	{
+     font-size :500%;
+	 padding-left :.5%;
+	}
+	.typed-cursor
+	{
+		font-size :660%;
+	}
+	
+	#what_we_do_content h1
+	{		
+		font-size : 280%;		
+	}
+	#what_we_do_content p
+	{
+		padding-left : 18%;
+		padding-right :18%;
+		font-size : 200%;
+	}
+		
+	.wwd_tab_container h3
+	{	
+		font-size : 200%;	
+	}
+	.wwd_tab_container p
+	{
+		font-size : 170%;	
+	}
+	#services_content h1
+	{
+		font-size : 300%;
+	}
+	#services_tab_1 h3
+	{
+		font-size : 175%;
+		
+	}
+	#services_tab_1 p
+	{
+		font-size : 125%;
+	}
+	#services_tab_2 h3
+	{
+		font-size : 175%;
+		
+	}
+	#services_tab_2 p
+	{
+		font-size : 125%;
+	}
+
+	.services_tabs_image img
+	{
+			height :18%;
+			width : 18%;
+	}
+	.services_tabs_image
+	{	
+		width : 100%;
+		min-height : 20%;	
+	}
+	.services_tabs
+	{
+		width : 30%;
+		height : auto;	
+		margin-left : 1.5%;
+		margin-right : 1.5%;
+		padding-bottom :1%;
+	}
+	.services_2_tabs
+	{
+		width : 30%;
+		height : auto;	
+	}
+	
+	#slide_fixed_bg h3
+	{
+		font-size : 330%;		
+		padding-top : 5%;
+	}
+	#heading_pg_4_0
+	{
+		top : 12%;
+	}
+	#content_pg_4_0
+	{		
+		top : 12%;
+		margin-left : 8%;
+		margin-right : 8%;
+		padding : .5%;
+	}
+	#img_pg_4_0
+	{
+		
+		height : 220px;
+		width : 220px;
+		float : right;
+		margin-top : 4%;
+		margin-right :4%;
+		bottom : 0;
+	}
+	#img_pg_4_1
+	{
+		height : 220px;
+		width : 220px;
+		float : right;
+		margin-top : 4%;
+		margin-right :4%;
+		bottom : 0;
+	}
+	#img_pg_4_2
+	{
+		height : 220px;
+		width : 220px;
+		float : right;
+		margin-top : 4%;
+		margin-right :4%;
+		bottom : 0;
+	}
+	.hhw h3
+	{
+		font-size : 300%;	
+	}
+
+	.hhw p
+	{
+		font-size : 205%;	
+	}
+	#section_4 .fp-controlArrow.fp-next
+	{
+		top : 30%;
+		right : 20%;
+		transform: scale(1.3, 1.3);	
+	}
+	#section_4 .fp-controlArrow.fp-prev
+	{
+		top : 30%;
+		left : 20%;
+		transform: scale(1.3, 1.3);	
+	}
+	#left_key
+	{
+		top : 50%;
+		left :8%;
+		transform: scale(1.2, 1.2);
+	}
+	
+	#right_key
+	{		
+		top : 50%;
+		right :8%;	
+		transform: scale(1.2, 1.2);
+	}
+	#footer_container p
+	{
+		font-size : 110%;
+	}
+	#footer_container
+	{
+		bottom : -6%;
+	}
+	#lab_main_sec
+	{
+		margin-top: 7%;
+		margin-left : 8%;
+	}
+	#lab_heading h2
+	{	
+		font-size : 280%;
+	}
+
+	#lab_content p
+	{
+		font-size : 200%;
+	}
+	#lab_content img 
+	{
+		margin-top : -2%;
+		width : 15%;
+		height : 15%;
+	}
+
+	#new_to_my_arsenal_tab
+	{
+		
+		width :84%;
+		margin-left : 8%;	
+		margin-top : 4%;
+	}
+
+	#new_to_my_arsenal_tab h3
+	{
+		font-size : 230%;
+		line-height :0;
+		padding-bottom :0;
+	}
+
+
+	.r_topic h5
+	{
+		font-size : 190%;
+	}
+	.r_topic p
+	{
+		
+		font-size : 170%;
+	}	
+	.exp
+	{
+		width : 15%;
+		height : auto;
+		margin-bottom :.5%;		
+	}
+	.exp h2
+	{
+		font-size :230%;
+		padding-top :1%;		
+	}
+	.exp_main_content
+	{
+		width : 100%;
+		padding-bottom :8%;
+	}
+
+	.exp_image
+	{
+		width : 100%;	
+	}
+	.exp_image img
+	{
+		width : 100%;
+		height : 100%;
+	}
+	.exp_content
+	{
+		width :100%;
+		padding-left :2%;
+		padding-right :1%;		
+	}
+	.exp_content p 
+	{
+		font-size : 200%;
+	}
+	#left_arrow
+	{
+		top :40%;
+		left :17%;
+		transform : scale(1.7,1.7);
+	}
+	#right_arrow
+	{
+		top :40%;
+		right :17%;
+		transform : scale(1.7,1.7);
+	}	
+	#about_game_content
+	{
+		width : 70%;
+		height : auto;
+		margin-left :15%;
+	}
+	#about_game_content	 h1
+	{		
+		font-size : 300%;
+	}
+	#about_game_content	 p
+	{
+		font-size : 170%;
+	}
+	#battle_of_champs_container
+	{
+		width : 70%;	
+		margin-top : 8%;
+		margin-left : 10%;
+		padding-left : 5%;
+		padding-right : 5%;
+	}
+
+	#battle_of_champs_container h2
+	{
+		font-size :480%;
+		line-height :1;
+	}
+
+	#battle_of_champs_container p
+	{
+		font-size : 170%;
+	}
+	#content_boc h4
+	{
+		font-size:180%;
+	}	
+	#contact_heading
+	{
+		width :25%;
+		height : auto;
+		padding-left : 10%;
+	}
+	#contact_heading h1
+	{
+		font-size : 270%;
+		
+	}
+	#contact_heading img 
+	{
+		right : 0;
+		width : 22%;
+		height : 22%;
+		margin-left : 4%;
+		padding-top : 4%;
+	}
+	#contact_content 
+	{
+		padding-top : 2%;
+		margin-left : 10%;	
+	}
+	#contact_content input 
+	{
+		width : 40%;
+		font-size : 240%;
+		margin-bottom : 4%;
+		padding-left : 1%;
+		padding-bottom :.5%;
+	}
+	#contact_content textarea
+	{
+		font-size : 200%;
+		padding-left : 1%;
+		width : 40%;
+		height : 190px	;
+		padding-top : 1%;
+	}
+
+	#contact_content h3
+	{
+		
+		margin-left : 30%;
+		margin-top : 2%;
+		width : 10%;
+		padding : .5%;
+		cursor : pointer;
+	}
+	
+	
+	#main_dynamic_bgimage_1
+	{
+		width : 50%;
+		height : 50%;
+		margin-left : 25%;
+		margin-top : 3%;
+		box-shadow : 8px 8px 30px;
+	}
+	#main_dynamic_bgimage_2
+	{
+		width : 50%;
+		height : 50%;
+		margin-left : 25%;
+		margin-top : 3%;
+		box-shadow : 8px 8px 30px;
+	}
+
+	#main_dynamic_bgimage_3
+	{
+		width : 50%;
+		height : 50%;
+		margin-left : 25%;
+		margin-top : 3%;
+		box-shadow : 8px 8px 30px;
+	}
+	#main_page_content_1
+	{
+		width : 80%;
+		text-align :center;
+		margin-left :10%;
+
+	}
+	#main_page_content_1 p
+	{
+		font-size : 190%;
+	}
+
+	#proj_1_heading
+	{
+		font-size : 380%;
+		text-shadow : 6px 6px 10px black;
+		left :13%;
+		top : 46%;
+	}
+
+	#case_study_container_1
+	{
+		width : 90%;
+		height : auto;
+		padding-left : 5%;
+		padding-right:5%;
+		margin-top :.5%;
+	}	
+	#case_study_heading_1 h3 
+	{
+		font-size : 220%;
+	}	
+
+	#case_study_content_1 p
+	{
+		font-size : 200%;
+	}
+
+	#color_augmented_1
+	{
+		width : 90%;
+		height : auto;
+		padding-left : 5%;
+		padding-right:5%;
+	}
+	#color_augmented_heading_1 h3
+	{
+		font-size : 220%;
+	}
+	#color_augmented_content
+	{
+		width :100%;
+		height :auto;
+		margin-top : 3%;
+	}
+	.color_pallete
+	{
+		width : 120px;
+		height : 120px;
+		border-radius : 200px;
+		box-shadow : 6px 6px 25px ;
+		margin-left :2%;
+		margin-right :2%;
+	}
+	#font_container
+	{
+		width : 90%;
+		padding-left : 5%;
+		padding-right:5%;
+		height : auto;
+		margin-top :4%;
+	}
+
+	#font_family_heading_1 h3
+	{
+		font-size : 230%;
+	}
+	#font_family_content_1 h5:nth-child(1)
+	{
+		font-size : 190%;
+		margin-right : 2%;
+	}
+
+	#font_family_content_1 h5:nth-child(2)
+	{
+		font-size : 190%;
+	}
+
+	#features_container_1
+	{
+		width : 90%;
+		padding-left :5%;
+		padding-right : 5%;
+	}
+
+	#features_heading_1	h3
+	{
+		font-size:200%;
+	}
+	#feature_content_1
+	{
+		width : 100%;
+		height : auto;
+	}
+	.feature
+	{
+		width : 23%;
+		margin-left :1%;
+		margin-right :1%;
+		
+	}
+	.feature img 
+	{
+		width : 25%;
+	}
+	.feature p
+	{
+		font-size : 150%;
+	}
+
+	#framework_used_container_1
+	{
+		width : 90%;
+		padding-left : 5%;
+		padding-right : 5%;
+	}
+
+	#framework_used_heading_1 h3
+	{
+		font-size : 190%;
+		width :100%;
+		height :auto;
+	}
+	#framework_used_content_1 
+	{
+		height : auto;
+		width : 100%;	
+	}
+	#framework_used_content_1 img 
+	{
+		width : 5.5%;
+		left :0;
+	}
+
+	#conclusion_container_1
+	{
+		margin-top : 8%;
+		width : 90%;
+		padding-left :5%;
+		padding-right : 5%;
+	}
+	#conclusion_heading_1 h3 
+	{
+		font-size :190%;
+	}
+	#conclusion_content_1 
+	{
+		width : 100%;
+		height : auto;	
+	}
+	#conclusion_content_1 p
+	{
+		font-size : 150%;
+	}
+
+}
+
+
+
+
+
+/*-----------------------------MEDIA QUERIES FOR 1600PXS ---------------------------------------*/
+@media  screen and (max-width: 1600px) 
+{
+
+  .header_nav_tabs
+	{
+		font-size :110%;	
+	}
+	#logo_id
+	{
+		width : 6%;
+	}
+	#section_1
+	{
+		padding-top : 22%;
+	}
+	#section_1  h1:nth-child(1) 
+	{
+    font-size : 280%;
+	}
+	#section_1  h1:nth-child(2) 
+	{
+     font-size :480%;
+	 padding-left :.5%;
+	}
+	.typed-cursor
+	{
+		font-size :600%;
+	}
+	
+	#what_we_do_content h1
+	{		
+		font-size : 250%;		
+	}
+	#what_we_do_content p
+	{
+		padding-left : 18%;
+		padding-right :18%;
+		font-size : 180%;
+	}
+		
+	.wwd_tab_container h3
+	{	
+		font-size : 180%;	
+	}
+	.wwd_tab_container p
+	{
+		font-size : 150%;	
+	}
+	#services_content h1
+	{
+		font-size : 250%;
+	}
+	#services_tab_1 h3
+	{
+		font-size : 150%;
+		
+	}
+	#services_tab_1 p
+	{
+		font-size : 120%;
+	}
+	#services_tab_1 h3
+	{
+		font-size : 150%;
+		
+	}
+	#services_tab_1 p
+	{
+		font-size : 120%;
+	}
+
+	.services_tabs_image img
+	{
+			height :18%;
+			width : 18%;
+	}
+	.services_tabs_image
+	{	
+		width : 100%;
+		min-height : 20%;	
+	}
+	.services_tabs
+	{
+		width : 30%;
+		height : auto;	
+		margin-left : 1.5%;
+		margin-right : 1.5%;
+		padding-bottom :1%;
+	}
+	.services_2_tabs
+	{
+		width : 30%;
+		height : auto;	
+	}
+	
+	#slide_fixed_bg h3
+	{
+		font-size : 250%;		
+		padding-top : 5%;
+	}
+	#heading_pg_4_0
+	{
+		top : 12%;
+	}
+	#content_pg_4_0
+	{		
+		top : 12%;
+		margin-left : 8%;
+		margin-right : 8%;
+		padding : .5%;
+	}
+	#img_pg_4_0
+	{
+		
+		height : 200px;
+		width : 200px;
+		float : right;
+		margin-top : 4%;
+		margin-right :4%;
+		bottom : 0;
+	}
+	#img_pg_4_1
+	{
+		height : 200px;
+		width : 200px;
+		float : right;
+		margin-top : 4%;
+		margin-right :4%;
+		bottom : 0;
+	}
+	#img_pg_4_2
+	{
+		height : 200px;
+		width : 200px;
+		float : right;
+		margin-top : 4%;
+		margin-right :4%;
+		bottom : 0;
+	}
+	.hhw h3
+	{
+		font-size : 250%;	
+	}
+
+	.hhw p
+	{
+		font-size : 180%;	
+	}
+	#section_4 .fp-controlArrow.fp-next
+	{
+		top : 30%;
+		right : 20%;
+	}
+	#section_4 .fp-controlArrow.fp-prev
+	{
+		top : 30%;
+		left : 20%;
+	}
+	#left_key
+	{
+		top : 50%;
+		left :8%;
+		transform: scale(1.2, 1.2);
+	}
+	
+	#right_key
+	{		
+		top : 50%;
+		right :8%;	
+		transform: scale(1.2, 1.2);
+	}
+	#footer_container p
+	{
+		font-size : 100%;
+	}
+		
+	#lab_main_sec
+	{
+		margin-top: 7%;
+		margin-left : 8%;
+	}
+	#lab_heading h2
+	{	
+		font-size : 250%;
+	}
+
+	#lab_content p
+	{
+		font-size : 180%;
+	}
+	#lab_content img 
+	{
+		margin-top : -2%;
+		width : 15%;
+		height : 15%;
+	}
+
+	#new_to_my_arsenal_tab
+	{
+		
+		width :84%;
+		margin-left : 8%;	
+		margin-top : 4%;
+	}
+
+	#new_to_my_arsenal_tab h3
+	{
+		font-size : 200%;
+		line-height :0;
+		padding-bottom :0;
+	}
+
+
+	.r_topic h5
+	{
+		font-size : 170%;
+	}
+	.r_topic p
+	{
+		
+		font-size : 150%;
+	}	
+	.exp
+	{
+		width : 15%;
+		height : auto;
+		margin-bottom :.5%;		
+	}
+	.exp h2
+	{
+		font-size :200%;
+		padding-top :1%;		
+	}
+	.exp_main_content
+	{
+		width : 100%;
+		padding-bottom :8%;
+	}
+
+	.exp_image
+	{
+		width : 100%;	
+	}
+	.exp_image img
+	{
+		width : 100%;
+		height : 100%;
+	}
+	.exp_content
+	{
+		width :100%;
+		padding-left :2%;
+		padding-right :1%;		
+	}
+	.exp_content p 
+	{
+		font-size : 150%;
+	}
+	#left_arrow
+	{
+		top :40%;
+		left :17%;
+	}
+	#right_arrow
+	{
+		top :40%;
+		right :17%;
+	}		
+	#about_game_content
+	{
+		width : 70%;
+		height : auto;
+		margin-left :15%;
+	}
+	#about_game_content	 h1
+	{		
+		font-size : 280%;
+	}
+	#about_game_content	 p
+	{
+		font-size : 150%;
+	}
+	#battle_of_champs_container
+	{
+		width : 70%;	
+		margin-top : 8%;
+		margin-left : 10%;
+		padding-left : 5%;
+		padding-right : 5%;
+	}
+
+	#battle_of_champs_container h2
+	{
+		font-size :450%;
+		line-height :1;
+	}
+
+	#battle_of_champs_container p
+	{
+		font-size : 150%;
+	}
+	#content_boc h4
+	{
+		font-size:180%;
+	}	
+	#contact_heading
+	{
+		width :25%;
+		height : auto;
+		padding-left : 10%;
+	}
+	#contact_heading h1
+	{
+		font-size : 240%;
+	}
+	#contact_heading img 
+	{
+		right : 0;
+		width : 22%;
+		height : 22%;
+		margin-left : 4%;
+		padding-top : 4%;
+	}
+	#contact_content 
+	{
+		padding-top : 2%;
+		margin-left : 10%;	
+	}
+	#contact_content input 
+	{
+		width : 40%;
+		font-size : 220%;
+		margin-bottom : 4%;
+		padding-left : 1%;
+		padding-bottom :.5%;
+	}
+	#contact_content textarea
+	{
+		font-size : 180%;
+		padding-left : 1%;
+		width : 40%;
+		height : 170px;
+		padding-top : 1%;
+	}
+
+	#contact_content h3
+	{
+		
+		margin-left : 45%;
+		margin-top : 2%;
+		width : 10%;
+		padding : .5%;
+		cursor : pointer;
+	}
+	
+	
+			
+	#main_dynamic_bgimage_1
+	{
+		width : 50%;
+		height : 50%;
+		margin-left : 25%;
+		margin-top : 3%;
+		box-shadow : 8px 8px 30px;
+	}
+	#main_dynamic_bgimage_2
+	{
+		width : 50%;
+		height : 50%;
+		margin-left : 25%;
+		margin-top : 3%;
+		box-shadow : 8px 8px 30px;
+	}
+
+	#main_dynamic_bgimage_3
+	{
+		width : 50%;
+		height : 50%;
+		margin-left : 25%;
+		margin-top : 3%;
+		box-shadow : 8px 8px 30px;
+	}
+	#main_page_content_1
+	{
+		width : 80%;
+		text-align :center;
+		margin-left :10%;
+
+	}
+	#main_page_content_1 p
+	{
+		font-size : 150%;
+	}
+
+	#proj_1_heading
+	{
+		font-size : 350%;
+		text-shadow : 6px 6px 10px black;
+		left :13%;
+		top : 46%;
+	}
+
+	#case_study_container_1
+	{
+		width : 90%;
+		height : auto;
+		padding-left : 5%;
+		padding-right:5%;
+		margin-top :.5%;
+	}	
+	#case_study_heading_1 h3 
+	{
+		font-size : 200%;
+	}	
+
+	#case_study_content_1 p
+	{
+		font-size : 180%;
+	}
+
+	#color_augmented_1
+	{
+		width : 90%;
+		height : auto;
+		padding-left : 5%;
+		padding-right:5%;
+	}
+	#color_augmented_heading_1 h3
+	{
+		font-size : 200%;
+	}
+	#color_augmented_content
+	{
+		width :100%;
+		height :auto;
+		margin-top : 3%;
+	}
+	.color_pallete
+	{
+		width : 100px;
+		height : 100px;
+		border-radius : 200px;
+		box-shadow : 6px 6px 25px ;
+		margin-left :2%;
+		margin-right :2%;
+	}
+	#font_container
+	{
+		width : 90%;
+		padding-left : 5%;
+		padding-right:5%;
+		height : auto;
+		margin-top :4%;
+	}
+
+	#font_family_heading_1 h3
+	{
+		font-size : 200%;
+	}
+	#font_family_content_1 h5:nth-child(1)
+	{
+		font-size : 180%;
+		margin-right : 2%;
+	}
+
+	#font_family_content_1 h5:nth-child(2)
+	{
+		font-size : 180%;
+	}
+
+	#features_container_1
+	{
+		width : 90%;
+		padding-left :5%;
+		padding-right : 5%;
+	}
+
+	#features_heading_1	h3
+	{
+		font-size:180%;
+	}
+	#feature_content_1
+	{
+		width : 100%;
+		height : auto;
+	}
+	.feature
+	{
+		width : 23%;
+		margin-left :1%;
+		margin-right :1%;
+		
+	}
+	.feature img 
+	{
+		width : 23%;
+	}
+	.feature p
+	{
+		font-size : 145%;
+	}
+
+	#framework_used_container_1
+	{
+		width : 90%;
+		padding-left : 5%;
+		padding-right : 5%;
+	}
+
+	#framework_used_heading_1 h3
+	{
+		font-size : 180%;
+		width :100%;
+		height :auto;
+	}
+	#framework_used_content_1 
+	{
+		height : auto;
+		width : 100%;	
+	}
+	#framework_used_content_1 img 
+	{
+		width : 5.5%;
+		left :0;
+	}
+
+	#conclusion_container_1
+	{
+		margin-top : 8%;
+		width : 90%;
+		padding-left :5%;
+		padding-right : 5%;
+	}
+	#conclusion_heading_1 h3 
+	{
+		font-size :180%;
+	}
+	#conclusion_content_1 
+	{
+		width : 100%;
+		height : auto;	
+	}
+	#conclusion_content_1 p
+	{
+		font-size : 130%;
+	}
+
+}
+
+
+/*-----------------------------MEDIA QUERIES FOR 1440PXS -----------------------------------*/
+@media  screen and (max-width: 1440px) 
+{
+    .header_nav_tabs
+	{
+		font-size :100%;	
+	}
+	#logo_id
+	{
+		width : 5.5%;
+	}
+	#what_we_do_content h1
+	{		
+		font-size : 230%;		
+	}
+	#what_we_do_content p
+	{
+		padding-left : 18%;
+		padding-right :18%;
+		font-size : 162%;
+	}	
+	.wwd_tab_container h3
+	{	
+		font-size : 160%;	
+	}
+	.wwd_tab_container p
+	{
+		font-size : 140%;	
+	}
+	#services_content h1
+	{
+		font-size : 230%;
+	}
+	#services_tab_1 h3
+	{
+		font-size : 135%;
+		
+	}
+	#services_tab_1 p
+	{
+		font-size : 105%;
+	}
+	#services_tab_2 h3
+	{
+		font-size : 135%;
+		
+	}
+	#services_tab_2 p
+	{
+		font-size : 105%;
+	}
+
+	.services_tabs_image img
+	{
+			height :17%;
+			width : 17%;
+	}
+	#slide_fixed_bg h3
+	{
+		font-size : 225%;		
+		padding-top : 5%;
+	}
+	#heading_pg_4_0
+	{
+		top : 12%;
+	}
+	#content_pg_4_0
+	{		
+		top : 12%;
+		margin-left : 8%;
+		margin-right : 8%;
+		padding : .5%;
+	}
+	#img_pg_4_0
+	{
+		
+		height : 185px;
+		width : 185px;
+		float : right;
+		margin-top : 4%;
+		margin-right :4%;
+		bottom : 0;
+	}
+	#img_pg_4_1
+	{
+		height : 185px;
+		width : 185px;
+		float : right;
+		margin-top : 4%;
+		margin-right :4%;
+		bottom : 0;
+	}
+	#img_pg_4_2
+	{
+		height : 185px;
+		width : 185px;
+		float : right;
+		margin-top : 4%;
+		margin-right :4%;
+		bottom : 0;
+	}
+	.hhw h3
+	{
+		font-size : 225%;	
+	}
+
+	.hhw p
+	{
+		font-size : 165%;	
+	}
+	#section_4 .fp-controlArrow.fp-next
+	{
+		top : 30%;
+		right : 20%;
+		width : 5px;
+		height : auto;
+	}
+	#section_4 .fp-controlArrow.fp-prev
+	{
+		top : 30%;
+		left : 20%;
+			width : 5px;
+		height : auto;
+	}	
+	#left_key
+	{
+		top : 50%;
+		left :8%;
+		transform: scale(1.1, 1.1);
+	}
+	
+	#right_key
+	{		
+		top : 50%;
+		right :8%;	
+		transform: scale(1.1, 1.1);
+	}
+	#footer_container p
+	{
+		font-size : 95%;
+	}
+	#lab_main_sec
+	{
+		margin-top: 7%;
+		margin-left : 8%;
+	}
+	#lab_heading h2
+	{	
+		font-size : 230%;
+	}
+
+	#lab_content p
+	{
+		font-size : 160%;
+	}
+	#lab_content img 
+	{
+		margin-top : -2%;
+		width : 14%;
+		height : 14%;
+	}
+
+	#new_to_my_arsenal_tab
+	{
+		
+		width :84%;
+		margin-left : 8%;	
+		margin-top : 4%;
+	}
+
+	#new_to_my_arsenal_tab h3
+	{
+		font-size : 180%;
+		line-height :0;
+		padding-bottom :0;
+	}
+
+
+	.r_topic h5
+	{
+		font-size : 160%;
+	}
+	.r_topic p
+	{
+		
+		font-size : 140%;
+	}
+	.exp
+	{
+		width : 15%;
+		height : auto;
+		margin-bottom :.5%;		
+	}
+	.exp h2
+	{
+		font-size :180%;
+		padding-top :1%;		
+	}
+	.exp_main_content
+	{
+		width : 100%;
+		padding-bottom :8%;
+	}
+
+	.exp_image
+	{
+		width : 100%;	
+	}
+	.exp_image img
+	{
+		width : 100%;
+		height : 100%;
+	}
+	.exp_content
+	{
+		width :100%;
+		padding-left :2%;
+		padding-right :1%;		
+	}
+	.exp_content p 
+	{
+		font-size : 130%;
+	}
+	#left_arrow
+	{
+		top :38%;
+		left :17%;
+	}
+	#right_arrow
+	{
+		top :38%;
+		right :17%;
+	}
+	#about_game_content
+	{
+		width : 70%;
+		height : auto;
+		margin-left :15%;
+	}
+	#about_game_content	 h1
+	{		
+		font-size : 260%;
+	}
+	#about_game_content	 p
+	{
+		font-size : 140%;
+	}
+	#battle_of_champs_container
+	{
+		width : 70%;	
+		margin-top : 8%;
+		margin-left : 10%;
+		padding-left : 5%;
+		padding-right : 5%;
+	}
+
+	#battle_of_champs_container h2
+	{
+		font-size :410%;
+		line-height :1;
+	}
+
+	#battle_of_champs_container p
+	{
+		font-size : 130%;
+	}
+	#content_boc h4
+	{
+		font-size:160%;
+	}
+	#contact_heading
+	{
+		width :25%;
+		height : auto;
+		padding-left : 10%;
+	}
+	#contact_heading h1
+	{
+		font-size : 220%;
+	}
+	#contact_heading img 
+	{
+		right : 0;
+		width : 20%;
+		height : 20%;
+		margin-left : 4%;
+		padding-top : 4%;
+	}
+	#contact_content 
+	{
+		padding-top : 2%;
+		margin-left : 10%;	
+	}
+	#contact_content input 
+	{
+		width : 40%;
+		font-size : 190%;
+		margin-bottom : 4%;
+		padding-left : 1%;
+		padding-bottom :.5%;
+	}
+	#contact_content textarea
+	{
+		font-size : 160%;
+		padding-left : 1%;
+		width : 38%;
+		height : 160px;
+		padding-top : 1%;
+	}
+
+	#contact_content h3
+	{
+		font-size : 190%;
+		margin-left : 45%;
+		margin-top : 2%;
+		width : 10%;
+		padding : .5%;
+		cursor : pointer;
+	}
+	
+
+				
+	#main_dynamic_bgimage_1
+	{
+		width : 50%;
+		height : 50%;
+		margin-left : 25%;
+		margin-top : 3%;
+		box-shadow : 8px 8px 30px;
+	}
+	#main_dynamic_bgimage_2
+	{
+		width : 50%;
+		height : 50%;
+		margin-left : 25%;
+		margin-top : 3%;
+		box-shadow : 8px 8px 30px;
+	}
+
+	#main_dynamic_bgimage_3
+	{
+		width : 50%;
+		height : 50%;
+		margin-left : 25%;
+		margin-top : 3%;
+		box-shadow : 8px 8px 30px;
+	}
+	#main_page_content_1
+	{
+		width : 80%;
+		text-align :center;
+		margin-left :10%;
+
+	}
+	#main_page_content_1 p
+	{
+		font-size : 130%;
+	}
+
+	#proj_1_heading
+	{
+		font-size : 320%;
+		text-shadow : 6px 6px 10px black;
+		left :13%;
+		top : 46%;
+	}
+
+	#case_study_container_1
+	{
+		width : 90%;
+		height : auto;
+		padding-left : 5%;
+		padding-right:5%;
+		margin-top :.5%;
+	}	
+	#case_study_heading_1 h3 
+	{
+		font-size : 180%;
+	}	
+
+	#case_study_content_1 p
+	{
+		font-size : 150%;
+	}
+
+	#color_augmented_1
+	{
+		width : 90%;
+		height : auto;
+		padding-left : 5%;
+		padding-right:5%;
+	}
+	#color_augmented_heading_1 h3
+	{
+		font-size : 180%;
+	}
+	#color_augmented_content
+	{
+		width :100%;
+		height :auto;
+		margin-top : 3%;
+	}
+	.color_pallete
+	{
+		width : 95px;
+		height : 95px;
+		border-radius : 200px;
+		box-shadow : 6px 6px 25px ;
+		margin-left :2%;
+		margin-right :2%;
+	}
+	#font_container
+	{
+		width : 90%;
+		padding-left : 5%;
+		padding-right:5%;
+		height : auto;
+		margin-top :4%;
+	}
+
+	#font_family_heading_1 h3
+	{
+		font-size : 180%;
+	}
+	#font_family_content_1 h5:nth-child(1)
+	{
+		font-size : 160%;
+		margin-right : 2%;
+	}
+
+	#font_family_content_1 h5:nth-child(2)
+	{
+		font-size : 160%;
+	}
+
+	#features_container_1
+	{
+		width : 90%;
+		padding-left :5%;
+		padding-right : 5%;
+	}
+
+	#features_heading_1	h3
+	{
+		font-size:160%;
+	}
+	#feature_content_1
+	{
+		width : 100%;
+		height : auto;
+	}
+	.feature
+	{
+		width : 23%;
+		margin-left :1%;
+		margin-right :1%;
+		
+	}
+	.feature img 
+	{
+		width : 21%;
+	}
+	.feature p
+	{
+		font-size : 130%;
+	}
+
+	#framework_used_container_1
+	{
+		width : 90%;
+		padding-left : 5%;
+		padding-right : 5%;
+	}
+
+	#framework_used_heading_1 h3
+	{
+		font-size : 160%;
+		width :100%;
+		height :auto;
+	}
+	#framework_used_content_1 
+	{
+		height : auto;
+		width : 100%;	
+	}
+	#framework_used_content_1 img 
+	{
+		width : 5.5%;
+		left :0;
+	}
+
+	#conclusion_container_1
+	{
+		margin-top : 8%;
+		width : 90%;
+		padding-left :5%;
+		padding-right : 5%;
+	}
+	#conclusion_heading_1 h3 
+	{
+		font-size :160%;
+	}
+	#conclusion_content_1 
+	{
+		width : 100%;
+		height : auto;	
+	}
+	#conclusion_content_1 p
+	{
+		font-size : 120%;
+	}
+	
+}
+
+
+/*-----------------------------MEDIA QUERIS FOR 1280PXS--------------------------------------*/
+@media  screen and (max-width: 1280px) 
+{
+    .header_nav_tabs
+	{
+		font-size :90%;	
+	}
+	#logo_id
+	{
+		width : 5%;
+	}
+	#section_1
+	{
+		padding-top : 22%;
+	}
+	#section_1  h1:nth-child(1) 
+	{
+		font-size : 230%;
+	}
+	#section_1  h1:nth-child(2) 
+	{
+		font-size :430%;
+		padding-left :.5%;
+	}
+	#what_we_do_content h1
+	{		
+		font-size : 210%;		
+	}
+	#what_we_do_content p
+	{
+		padding-left : 18%;
+		padding-right :18%;
+		font-size : 144%;
+	}	
+	.wwd_tab_container h3
+	{	
+		font-size : 140%;	
+	}
+	.wwd_tab_container p
+	{
+		font-size : 130%;	
+	}
+	#services_content h1
+	{
+		font-size : 205%;
+	}
+	#services_tab_1 h3
+	{
+		font-size : 120%;
+		
+	}
+	#services_tab_1 p
+	{
+		font-size : 90%;
+	}
+	#services_tab_2 h3
+	{
+		font-size : 120%;
+		
+	}
+	#services_tab_2 p
+	{
+		font-size : 90%;
+	}
+
+	.services_tabs_image img
+	{
+			height :16%;
+			width : 16%;
+	}
+	#slide_fixed_bg h3
+	{
+		font-size : 200%;		
+		padding-top : 5%;
+	}
+	#heading_pg_4_0
+	{
+		top : 12%;
+	}
+	#content_pg_4_0
+	{		
+		top : 12%;
+		margin-left : 8%;
+		margin-right : 8%;
+		padding : .5%;
+	}
+	#img_pg_4_0
+	{
+		
+		height : 160px;
+		width : 160px;
+		float : right;
+		margin-top : 4%;
+		margin-right :4%;
+		bottom : 0;
+	}
+	#img_pg_4_1
+	{
+		height : 160px;
+		width : 160px;
+		float : right;
+		margin-top : 4%;
+		margin-right :4%;
+		bottom : 0;
+	}
+	#img_pg_4_2
+	{
+		height : 160px;
+		width : 160px;
+		float : right;
+		margin-top : 4%;
+		margin-right :4%;
+		bottom : 0;
+	}
+	.hhw h3
+	{
+		font-size : 200%;	
+	}
+
+	.hhw p
+	{
+		font-size : 150%;	
+	}
+	#section_4 .fp-controlArrow.fp-next
+	{
+		top : 30%;
+		right : 20%;
+		transform: scale(.9, .9);
+	}
+	#section_4 .fp-controlArrow.fp-prev
+	{
+		top : 30%;
+		left : 20%;
+		transform: scale(.9, .9);	
+	}
+	#left_key
+	{
+		top : 50%;
+		left :8%;
+		transform: scale(1, 1);
+	}
+	
+	#right_key
+	{		
+		top : 50%;
+		right :8%;	
+		transform: scale(1, 1);
+	}
+	#footer_container p
+	{
+		font-size : 82.5%;
+	}
+	#lab_main_sec
+	{
+		margin-top: 7%;
+		margin-left : 8%;
+	}
+	#lab_heading h2
+	{	
+		font-size : 210%;
+	}
+
+	#lab_content p
+	{
+		font-size : 140%;
+	}
+	#lab_content img 
+	{
+		margin-top : -2%;
+		width : 13%;
+		height : 13%;
+	}
+
+	#new_to_my_arsenal_tab
+	{
+		
+		width :84%;
+		margin-left : 8%;	
+		margin-top : 4%;
+	}
+
+	#new_to_my_arsenal_tab h3
+	{
+		font-size : 160%;
+		line-height :0;
+		padding-bottom :0;
+	}
+
+
+	.r_topic h5
+	{
+		font-size : 140%;
+	}
+	.r_topic p
+	{
+		
+		font-size : 120%;
+	}
+	.exp
+	{
+		width : 15%;
+		height : auto;
+		margin-bottom :.5%;		
+	}
+	.exp h2
+	{
+		font-size :160%;
+		padding-top :1%;		
+	}
+	.exp_main_content
+	{
+		width : 100%;
+		padding-bottom :8%;
+	}
+
+	.exp_image
+	{
+		width : 100%;	
+	}
+	.exp_image img
+	{
+		width : 100%;
+		height : 100%;
+	}
+	.exp_content
+	{
+		width :100%;
+		padding-left :2%;
+		padding-right :1%;		
+	}
+	.exp_content p 
+	{
+		font-size : 120%;
+	}
+	#left_arrow
+	{
+		top :38%;
+		left :17%;
+	}
+	#right_arrow
+	{
+		top :38%;
+		right :17%;
+	}
+	#about_game_content
+	{
+		width : 70%;
+		height : auto;
+		margin-left :15%;
+	}
+	#about_game_content	 h1
+	{		
+		font-size : 230%;
+	}
+	#about_game_content	 p
+	{
+		font-size : 130%;
+	}
+	#battle_of_champs_container
+	{
+		width : 70%;	
+		margin-top : 8%;
+		margin-left : 10%;
+		padding-left : 5%;
+		padding-right : 5%;
+	}
+
+	#battle_of_champs_container h2
+	{
+		font-size :340%;
+		line-height :.8;
+	}
+
+	#battle_of_champs_container p
+	{
+		font-size : 110%;
+	}
+	#content_boc h4
+	{
+		font-size:120%;
+	}
+	#contact_heading
+	{
+		width :25%;
+		height : auto;
+		padding-left : 10%;
+	}
+	#contact_heading h1
+	{
+		font-size : 190%;
+	}
+	#contact_heading img 
+	{
+		right : 0;
+		width : 18%;
+		height : 18%;
+		margin-left : 4%;
+		padding-top : 4%;
+	}
+	#contact_content 
+	{
+		padding-top : 2%;
+		margin-left : 10%;	
+	}
+	#contact_content input 
+	{
+		width : 36%;
+		font-size : 170%;
+		margin-bottom : 4%;
+		padding-left : 1%;
+		padding-bottom :.5%;
+	}
+	#contact_content textarea
+	{
+		font-size : 150%;
+		padding-left : 1%;
+		width : 36%;
+		height : 150px;
+		padding-top : 1%;
+	}
+
+	#contact_content h3
+	{
+		font-size : 160%;
+		margin-left : 45%;
+		margin-top : 1.5%;
+		width : 10%;
+		padding : .5%;
+		cursor : pointer;
+	}
+	
+	
+					
+	#main_dynamic_bgimage_1
+	{
+		width : 50%;
+		height : 50%;
+		margin-left : 25%;
+		margin-top : 3%;
+		box-shadow : 8px 8px 30px;
+	}
+	#main_dynamic_bgimage_2
+	{
+		width : 50%;
+		height : 50%;
+		margin-left : 25%;
+		margin-top : 3%;
+		box-shadow : 8px 8px 30px;
+	}
+
+	#main_dynamic_bgimage_3
+	{
+		width : 50%;
+		height : 50%;
+		margin-left : 25%;
+		margin-top : 3%;
+		box-shadow : 8px 8px 30px;
+	}
+	#main_page_content_1
+	{
+		width : 80%;
+		text-align :center;
+		margin-left :10%;
+
+	}
+	#main_page_content_1 p
+	{
+		font-size : 120%;
+	}
+
+	#proj_1_heading
+	{
+		font-size : 300%;
+		text-shadow : 6px 6px 10px black;
+		left :13%;
+		top : 46%;
+	}
+
+	#case_study_container_1
+	{
+		width : 90%;
+		height : auto;
+		padding-left : 5%;
+		padding-right:5%;
+		margin-top :.5%;
+	}	
+	#case_study_heading_1 h3 
+	{
+		font-size : 160%;
+	}	
+
+	#case_study_content_1 p
+	{
+		font-size : 135%;
+	}
+
+	#color_augmented_1
+	{
+		width : 90%;
+		height : auto;
+		padding-left : 5%;
+		padding-right:5%;
+	}
+	#color_augmented_heading_1 h3
+	{
+		font-size : 160%;
+	}
+	#color_augmented_content
+	{
+		width :100%;
+		height :auto;
+		margin-top : 3%;
+	}
+	.color_pallete
+	{
+		width : 90px;
+		height : 90px;
+		border-radius : 200px;
+		box-shadow : 6px 6px 25px ;
+		margin-left :2%;
+		margin-right :2%;
+	}
+	#font_container
+	{
+		width : 90%;
+		padding-left : 5%;
+		padding-right:5%;
+		height : auto;
+		margin-top :4%;
+	}
+
+	#font_family_heading_1 h3
+	{
+		font-size : 160%;
+	}
+	#font_family_content_1 h5:nth-child(1)
+	{
+		font-size : 140%;
+		margin-right : 2%;
+	}
+
+	#font_family_content_1 h5:nth-child(2)
+	{
+		font-size : 140%;
+	}
+
+	#features_container_1
+	{
+		width : 90%;
+		padding-left :5%;
+		padding-right : 5%;
+	}
+
+	#features_heading_1	h3
+	{
+		font-size:140%;
+	}
+	#feature_content_1
+	{
+		width : 100%;
+		height : auto;
+	}
+	.feature
+	{
+		width : 23%;
+		margin-left :1%;
+		margin-right :1%;
+		
+	}
+	.feature img 
+	{
+		width : 19%;
+	}
+	.feature p
+	{
+		font-size : 110%;
+	}
+
+	#framework_used_container_1
+	{
+		width : 90%;
+		padding-left : 5%;
+		padding-right : 5%;
+	}
+
+	#framework_used_heading_1 h3
+	{
+		font-size : 140%;
+		width :100%;
+		height :auto;
+	}
+	#framework_used_content_1 
+	{
+		height : auto;
+		width : 100%;	
+	}
+	#framework_used_content_1 img 
+	{
+		width : 5%;
+		left :0;
+	}
+
+	#conclusion_container_1
+	{
+		margin-top : 8%;
+		width : 90%;
+		padding-left :5%;
+		padding-right : 5%;
+	}
+	#conclusion_heading_1 h3 
+	{
+		font-size :140%;
+	}
+	#conclusion_content_1 
+	{
+		width : 100%;
+		height : auto;	
+	}
+	#conclusion_content_1 p
+	{
+		font-size : 110%;
+	}
+		
+}
+
+/*-------------------------------MEDIA QUERIES FOR 1024PX + phone orientation ------------------------------*/
+@media  screen and (max-width: 1024px)  
+{
+	 .header_nav_tabs
+	{
+		font-size :70%;	
+	}
+	#logo_id
+	{
+		width : 4.5%;
+	}
+	#section_1
+	{
+		padding-top : 20%;
+	}
+	#section_1  h1:nth-child(1) 
+	{
+		font-size : 160%;
+	}
+	#section_1  h1:nth-child(2) 
+	{
+		font-size :360%;
+		padding-left :.5%;
+	}
+	.typed-cursor
+	{
+		font-size :500%;
+	}
+	#what_we_do_content h1
+	{		
+		font-size : 180%;		
+	}
+	#what_we_do_content p
+	{
+		padding-left : 18%;
+		padding-right :18%;
+		font-size : 136%;
+	}	
+	.wwd_tab_container h3
+	{	
+		font-size : 110%;	
+	}
+	.wwd_tab_container p
+	{
+		font-size : 100%;	
+	}
+	#services_content h1
+	{
+		font-size : 175%;
+	}
+	#services_tab_1 h3
+	{
+		font-size : 100%;
+		
+	}
+	#services_tab_1 p
+	{
+		font-size : 75%;
+	}
+	#services_tab_2 h3
+	{
+		font-size : 100%;
+		
+	}
+	#services_tab_2 p
+	{
+		font-size : 75%;
+	}
+
+	.services_tabs_image img
+	{
+			height :15%;
+			width : 15%;
+	}
+	#slide_fixed_bg h3
+	{
+		font-size : 175%;		
+		padding-top : 5%;
+	}
+	#heading_pg_4_0
+	{
+		top : 12%;
+	}
+	#content_pg_4_0
+	{		
+		top : 12%;
+		margin-left : 8%;
+		margin-right : 8%;
+		padding : .5%;
+	}
+	#img_pg_4_0
+	{
+		
+		height : 160px;
+		width : 160px;
+		float : right;
+		margin-top : 4%;
+		margin-right :4%;
+		bottom : 0;
+	}
+	#img_pg_4_1
+	{
+		height : 160px;
+		width : 160px;
+		float : right;
+		margin-top : 4%;
+		margin-right :4%;
+		bottom : 0;
+	}
+	#img_pg_4_2
+	{
+		height : 160px;
+		width : 160px;
+		float : right;
+		margin-top : 4%;
+		margin-right :4%;
+		bottom : 0;
+	}
+	.hhw h3
+	{
+		font-size : 175%;	
+	}
+
+	.hhw p
+	{
+		font-size : 125%;	
+	}
+	#section_4 .fp-controlArrow.fp-next
+	{
+		top : 30%;
+		right : 20%;
+		transform: scale(.8, .8);
+	}
+	#section_4 .fp-controlArrow.fp-prev
+	{
+		top : 30%;
+		left : 20%;
+		transform: scale(.9, .9);	
+	}
+	#left_key
+	{
+		top : 50%;
+		left :8%;
+		transform: scale(.8, .8);
+	}
+	
+	#right_key
+	{		
+		top : 50%;
+		right :8%;	
+		transform: scale(.8, .8);
+	}
+	#footer_container p
+	{
+		font-size : 65%;
+	}
+	#lab_main_sec
+	{
+		margin-top: 7%;
+		margin-left : 8%;
+	}
+	#lab_heading h2
+	{	
+		font-size : 190%;
+	}
+
+	#lab_content p
+	{
+		font-size : 120%;
+	}
+	#lab_content img 
+	{
+		margin-top : -2%;
+		width : 12%;
+		height : 12%;
+	}
+
+	#new_to_my_arsenal_tab
+	{
+		
+		width :84%;
+		margin-left : 8%;	
+		margin-top : 4%;
+	}
+
+	#new_to_my_arsenal_tab h3
+	{
+		font-size : 140%;
+		line-height :0;
+		padding-bottom :0;
+	}
+
+
+	.r_topic h5
+	{
+		font-size : 120%;
+	}
+	.r_topic p
+	{
+		
+		font-size : 100%;
+	}
+	.exp
+	{
+		width : 15%;
+		height : auto;
+		margin-bottom :.5%;		
+	}
+	.exp h2
+	{
+		font-size :140%;
+		padding-top :1%;		
+	}
+	.exp_main_content
+	{
+		width : 100%;
+		padding-bottom :8%;
+	}
+
+	.exp_image
+	{
+		width : 100%;	
+	}
+	.exp_image img
+	{
+		width : 100%;
+		height : 100%;
+	}
+	.exp_content
+	{
+		width :100%;
+		padding-left :2%;
+		padding-right :1%;		
+	}
+	.exp_content p 
+	{
+		font-size : 110%;
+	}
+	#left_arrow
+	{
+		top :38%;
+		left :17%;
+	}
+	#right_arrow
+	{
+		top :38%;
+		right :17%;
+		transform : scale(.9,.9);
+	}
+	#about_game_content
+	{
+		width : 70%;
+		height : auto;
+		margin-left :15%;
+	}
+	#about_game_content	 h1
+	{		
+		font-size : 190%;
+	}
+	#about_game_content	 p
+	{
+		font-size : 110%;
+	}
+	#battle_of_champs_container
+	{
+		width : 70%;	
+		margin-top : 6%;
+		margin-left : 10%;
+		padding-left : 5%;
+		padding-right : 5%;
+	}
+
+	#battle_of_champs_container h2
+	{
+		font-size :280%;
+		line-height :.8;
+	}
+
+	#battle_of_champs_container p
+	{
+		font-size : 100%;
+	}
+	#content_boc h4
+	{
+		font-size:110%;
+	}
+	#contact_heading
+	{
+		width :25%;
+		height : auto;
+		padding-left : 10%;
+	}
+	#contact_heading h1
+	{
+		font-size : 160%;
+	}
+	#contact_heading img 
+	{
+		right : 0;
+		width : 17%;
+		height : 17%;
+		margin-left : 4%;
+		padding-top : 4%;
+	}
+	#contact_content 
+	{
+		padding-top : 2%;
+		margin-left : 10%;	
+	}
+	#contact_content input 
+	{
+		width : 30%;
+		font-size : 125%;
+		margin-bottom : 4%;
+		padding-left : 1%;
+		padding-bottom :.5%;
+	}
+	#contact_content textarea
+	{
+		font-size : 120%;
+		padding-left : 1%;
+		width : 36%;
+		height : 120px;
+		padding-top : 1%;
+	}
+
+	#contact_content h3
+	{
+		font-size : 135%;
+		margin-left : 45%;
+		margin-top : 1.5%;
+		width : 10%;
+		padding : .5%;
+		cursor : pointer;
+	}
+	
+	
+	
+					
+	#main_dynamic_bgimage_1
+	{
+		width : 50%;
+		height : 50%;
+		margin-left : 25%;
+		margin-top : 3%;
+		box-shadow : 8px 8px 30px;
+	}
+	#main_dynamic_bgimage_2
+	{
+		width : 50%;
+		height : 50%;
+		margin-left : 25%;
+		margin-top : 3%;
+		box-shadow : 8px 8px 30px;
+	}
+
+	#main_dynamic_bgimage_3
+	{
+		width : 50%;
+		height : 50%;
+		margin-left : 25%;
+		margin-top : 3%;
+		box-shadow : 8px 8px 30px;
+	}
+	#main_page_content_1
+	{
+		width : 80%;
+		text-align :center;
+		margin-left :10%;
+
+	}
+	#main_page_content_1 p
+	{
+		font-size : 110%;
+	}
+
+	#proj_1_heading
+	{
+		font-size : 280%;
+		text-shadow : 6px 6px 10px black;
+		left :13%;
+		top : 46%;
+	}
+
+	#case_study_container_1
+	{
+		width : 90%;
+		height : auto;
+		padding-left : 5%;
+		padding-right:5%;
+		margin-top :.5%;
+	}	
+	#case_study_heading_1 h3 
+	{
+		font-size : 135%;
+	}	
+
+	#case_study_content_1 p
+	{
+		font-size : 110%;
+	}
+
+	#color_augmented_1
+	{
+		width : 90%;
+		height : auto;
+		padding-left : 5%;
+		padding-right:5%;
+	}
+	#color_augmented_heading_1 h3
+	{
+		font-size : 140%;
+	}
+	#color_augmented_content
+	{
+		width :100%;
+		height :auto;
+		margin-top : 3%;
+	}
+	.color_pallete
+	{
+		width : 85px;
+		height : 85px;
+		border-radius : 200px;
+		box-shadow : 6px 6px 25px ;
+		margin-left :2%;
+		margin-right :2%;
+	}
+	#font_container
+	{
+		width : 90%;
+		padding-left : 5%;
+		padding-right:5%;
+		height : auto;
+		margin-top :4%;
+	}
+
+	#font_family_heading_1 h3
+	{
+		font-size : 140%;
+	}
+	#font_family_content_1 h5:nth-child(1)
+	{
+		font-size : 130%;
+		margin-right : 2%;
+	}
+
+	#font_family_content_1 h5:nth-child(2)
+	{
+		font-size : 130%;
+	}
+
+	#features_container_1
+	{
+		width : 90%;
+		padding-left :5%;
+		padding-right : 5%;
+	}
+
+	#features_heading_1	h3
+	{
+		font-size:120%;
+	}
+	#feature_content_1
+	{
+		width : 100%;
+		height : auto;
+	}
+	.feature
+	{
+		width : 23%;
+		margin-left :1%;
+		margin-right :1%;
+		
+	}
+	.feature img 
+	{
+		width : 19%;
+	}
+	.feature p
+	{
+		font-size : 90%;
+	}
+
+	#framework_used_container_1
+	{
+		width : 90%;
+		padding-left : 5%;
+		padding-right : 5%;
+	}
+
+	#framework_used_heading_1 h3
+	{
+		font-size : 120%;
+		width :100%;
+		height :auto;
+	}
+	#framework_used_content_1 
+	{
+		height : auto;
+		width : 100%;	
+	}
+	#framework_used_content_1 img 
+	{
+		width : 5%;
+		left :0;
+	}
+
+	#conclusion_container_1
+	{
+		margin-top : 8%;
+		width : 90%;
+		padding-left :5%;
+		padding-right : 5%;
+	}
+	#conclusion_heading_1 h3 
+	{
+		font-size :120%;
+	}
+	#conclusion_content_1 
+	{
+		width : 100%;
+		height : auto;	
+	}
+	#conclusion_content_1 p
+	{
+		font-size : 90%;
+	}
+}
+/*-----------------------------MEDIA QUERIES FOR 900PXS --------------------------------------*/
+@media  screen and (max-width: 900px)  
+{
+
+	 .header_nav_tabs
+	{
+		font-size :60%;	
+	}
+	#logo_id
+	{
+		width : 4.5%;
+	}
+	#section_1
+	{
+		padding-top : 18%;
+	}
+	#section_1  h1:nth-child(1) 
+	{
+		font-size : 120%;
+	}
+	#section_1  h1:nth-child(2) 
+	{
+		font-size :300%;
+		padding-left :.5%;
+	}
+	.typed-cursor
+	{
+		font-size :450%;
+	}
+	#what_we_do_content h1
+	{		
+		font-size : 200%;		
+	}
+	#what_we_do_content p
+	{
+		padding-left : 18%;
+		padding-right :18%;
+		font-size : 156%;
+	}	
+	#wwd_tabs
+	{
+		display : none;
+	}
+	#services_content h1
+	{
+		font-size : 150%;
+	}
+	#services_tab_1 h3
+	{
+		font-size : 85%;
+		
+	}
+	#services_tab_1 p
+	{
+		font-size : 70%;
+	}
+	#services_tab_2 h3
+	{
+		font-size : 85%;
+		
+	}
+	#services_tab_2 p
+	{
+		font-size : 70%;
+	}
+
+	.services_tabs_image img
+	{
+			height :14%;
+			width : 14%;
+	}
+	#slide_fixed_bg h3
+	{
+		font-size : 150%;		
+		padding-top : 5%;
+	}
+	#heading_pg_4_0
+	{
+		top : 12%;
+	}
+	#content_pg_4_0
+	{		
+		top : 12%;
+		margin-left : 8%;
+		margin-right : 8%;
+		padding : .5%;
+	}
+	#img_pg_4_0
+	{
+		
+		height : 130px;
+		width : 130px;
+		float : right;
+		margin-top : 4%;
+		margin-right :4%;
+		bottom : 0;
+	}
+	#img_pg_4_1
+	{
+		height : 130px;
+		width : 130px;
+		float : right;
+		margin-top : 4%;
+		margin-right :4%;
+		bottom : 0;
+	}
+	#img_pg_4_2
+	{
+		height : 130px;
+		width : 130px;
+		float : right;
+		margin-top : 4%;
+		margin-right :4%;
+		bottom : 0;
+	}
+	.hhw h3
+	{
+		font-size : 150%;	
+	}
+
+	.hhw p
+	{
+		font-size : 100%;	
+	}
+	#section_4 .fp-controlArrow.fp-next
+	{
+		top : 30%;
+		right : 20%;
+		transform: scale(.8, .8);	
+	}
+	#section_4 .fp-controlArrow.fp-prev
+	{
+		top : 30%;
+		left : 20%;
+		transform: scale(.8, .8);		
+	}
+	#left_key
+	{
+		top : 50%;
+		left :8%;
+		transform: scale(.6, .6);
+	}
+	
+	#right_key
+	{		
+		top : 50%;
+		right :8%;	
+		transform: scale(.6, .6);
+	}
+	#footer_container p
+	{
+		font-size : 50%;
+	}
+	
+	#lab_main_sec
+	{
+		margin-top: 7%;
+		margin-left : 8%;
+	}
+	#lab_heading h2
+	{	
+		font-size : 170%;
+	}
+
+	#lab_content p
+	{
+		font-size : 100%;
+	}
+	#lab_content img 
+	{
+		margin-top : -2%;
+		width : 11%;
+		height : 11%;
+	}
+
+	#new_to_my_arsenal_tab
+	{
+		
+		width :84%;
+		margin-left : 8%;	
+		margin-top : 4%;
+	}
+
+	#new_to_my_arsenal_tab h3
+	{
+		font-size : 120%;
+		line-height :0;
+		padding-bottom :0;
+	}
+
+
+	.r_topic h5
+	{
+		font-size : 100%;
+	}
+	.r_topic p
+	{
+		
+		font-size : 80%;
+	}
+	.exp
+	{
+		width : 15%;
+		height : auto;
+		margin-bottom :.5%;		
+	}
+	.exp h2
+	{
+		font-size :120%;
+		padding-top :1%;		
+	}
+	.exp_main_content
+	{
+		width : 100%;
+		padding-bottom :8%;
+	}
+
+	.exp_image
+	{
+		width : 100%;	
+	}
+	.exp_image img
+	{
+		width : 100%;
+		height : 100%;
+	}
+	.exp_content
+	{
+		width :100%;
+		padding-left :2%;
+		padding-right :1%;		
+	}
+	.exp_content p 
+	{
+		font-size : 90%;
+	}
+	#left_arrow
+	{
+		top :33%;
+		left :17%;
+		transform : scale(.8,.8);
+	}
+	#right_arrow
+	{
+		top :33%;
+		right :17%;
+		transform : scale(.8,.8);
+	}
+	#about_game_content
+	{
+		width : 70%;
+		height : auto;
+		margin-left :15%;
+	}
+	#about_game_content	 h1
+	{		
+		font-size : 160%;
+	}
+	#about_game_content	 p
+	{
+		font-size : 95%;
+	}
+	#battle_of_champs_container
+	{
+		width : 70%;	
+		margin-top : 5%;
+		margin-left : 10%;
+		padding-left : 5%;
+		padding-right : 5%;
+	}
+
+	#battle_of_champs_container h2
+	{
+		font-size :250%;
+		line-height :.7;
+	}
+
+	#battle_of_champs_container p
+	{
+		font-size : 80%;
+	}
+	#content_boc h4
+	{
+		font-size:100%;
+	}
+	#contact_heading
+	{
+		width :25%;
+		height : auto;
+		padding-left : 10%;
+	}
+	#contact_heading h1
+	{
+		font-size : 140%;
+	}
+	#contact_heading img 
+	{
+		right : 0;
+		width : 16%;
+		height : 16%;
+		margin-left : 4%;
+		padding-top : 4%;
+	}
+	#contact_content 
+	{
+		padding-top : 2%;
+		margin-left : 10%;	
+	}
+	#contact_content input 
+	{
+		width : 30%;
+		font-size : 105%;
+		margin-bottom : 4%;
+		padding-left : 1%;
+		padding-bottom :.5%;
+	}
+	#contact_content textarea
+	{
+		font-size : 100%;
+		padding-left : 1%;
+		width : 36%;
+		height : 100px;
+		padding-top : 1%;
+	}
+
+	#contact_content h3
+	{
+		font-size : 115%;
+		margin-left : 45%;
+		margin-top : 1.5%;
+		width : 10%;
+		padding : .5%;
+		cursor : pointer;
+	}
+	
+	
+						
+	#main_dynamic_bgimage_1
+	{
+		width : 50%;
+		height : 50%;
+		margin-left : 25%;
+		margin-top : 3%;
+		box-shadow : 8px 8px 30px;
+	}
+	#main_dynamic_bgimage_2
+	{
+		width : 50%;
+		height : 50%;
+		margin-left : 25%;
+		margin-top : 3%;
+		box-shadow : 8px 8px 30px;
+	}
+
+	#main_dynamic_bgimage_3
+	{
+		width : 50%;
+		height : 50%;
+		margin-left : 25%;
+		margin-top : 3%;
+		box-shadow : 8px 8px 30px;
+	}
+	#main_page_content_1
+	{
+		width : 80%;
+		text-align :center;
+		margin-left :10%;
+
+	}
+	#main_page_content_1 p
+	{
+		font-size : 100%;
+	}
+
+	#proj_1_heading
+	{
+		font-size : 250%;
+		text-shadow : 6px 6px 10px black;
+		left :13%;
+		top : 44%;
+	}
+
+	#case_study_container_1
+	{
+		width : 90%;
+		height : auto;
+		padding-left : 5%;
+		padding-right:5%;
+		margin-top :.5%;
+	}	
+	#case_study_heading_1 h3 
+	{
+		font-size : 120%;
+	}	
+
+	#case_study_content_1 p
+	{
+		font-size : 100%;
+	}
+
+	#color_augmented_1
+	{
+		width : 90%;
+		height : auto;
+		padding-left : 5%;
+		padding-right:5%;
+	}
+	#color_augmented_heading_1 h3
+	{
+		font-size : 120%;
+	}
+	#color_augmented_content
+	{
+		width :100%;
+		height :auto;
+		margin-top : 3%;
+	}
+	.color_pallete
+	{
+		width : 70px;
+		height : 70px;
+		border-radius : 200px;
+		box-shadow : 6px 6px 25px ;
+		margin-left :2%;
+		margin-right :2%;
+	}
+	#font_container
+	{
+		width : 90%;
+		padding-left : 5%;
+		padding-right:5%;
+		height : auto;
+		margin-top :4%;
+	}
+
+	#font_family_heading_1 h3
+	{
+		font-size : 120%;
+	}
+	#font_family_content_1 h5:nth-child(1)
+	{
+		font-size : 110%;
+		margin-right : 2%;
+	}
+
+	#font_family_content_1 h5:nth-child(2)
+	{
+		font-size : 110%;
+	}
+
+	#features_container_1
+	{
+		width : 90%;
+		padding-left :5%;
+		padding-right : 5%;
+	}
+
+	#features_heading_1	h3
+	{
+		font-size:110%;
+	}
+	#feature_content_1
+	{
+		width : 100%;
+		height : auto;
+	}
+	.feature
+	{
+		width : 23%;
+		margin-left :1%;
+		margin-right :1%;
+		
+	}
+	.feature img 
+	{
+		width : 18%;
+	}
+	.feature p
+	{
+		font-size : 80%;
+	}
+
+	#framework_used_container_1
+	{
+		width : 90%;
+		padding-left : 5%;
+		padding-right : 5%;
+	}
+
+	#framework_used_heading_1 h3
+	{
+		font-size : 110%;
+		width :100%;
+		height :auto;
+	}
+	#framework_used_content_1 
+	{
+		height : auto;
+		width : 100%;	
+	}
+	#framework_used_content_1 img 
+	{
+		width : 4.5%;
+		left :0;
+	}
+
+	#conclusion_container_1
+	{
+		margin-top : 8%;
+		width : 90%;
+		padding-left :5%;
+		padding-right : 5%;
+	}
+	#conclusion_heading_1 h3 
+	{
+		font-size :100%;
+	}
+	#conclusion_content_1 
+	{
+		width : 100%;
+		height : auto;	
+	}
+	#conclusion_content_1 p
+	{
+		font-size : 80%;
+	}
+}
+/*-----------------------------MEDIA QUERIES FOR 800PXS --------------------------------------*/
+@media  screen and (max-width: 800px)  
+{
+
+	 .header_nav_tabs
+	{
+		font-size :50%;	
+	}
+	#section_1
+	{
+		padding-top : 16%;
+	}
+	#section_1  h1:nth-child(1) 
+	{
+		font-size : 100%;
+	}
+	#section_1  h1:nth-child(2) 
+	{
+		font-size :260%;
+		padding-left :.5%;
+	}
+	#what_we_do_content h1
+	{		
+		font-size : 190%;		
+	}
+	#what_we_do_content p
+	{
+		padding-left : 18%;
+		padding-right :18%;
+		font-size : 146%;
+	}	
+	#wwd_tabs
+	{
+		display : none;
+	}
+	#services_content h1
+	{
+		font-size : 130%;
+	}
+	#services_tab_1 h3
+	{
+		font-size : 70%;
+		
+	}
+	#services_tab_1 p
+	{
+		font-size : 60%;
+	}
+	#services_tab_2 h3
+	{
+		font-size : 70%;
+		
+	}
+	#services_tab_2 p
+	{
+		font-size : 60%;
+	}
+
+	.services_tabs_image img
+	{
+			height :14%;
+			width : 14%;
+	}
+	#slide_fixed_bg h3
+	{
+		font-size : 125%;		
+		padding-top : 5%;
+	}
+	#heading_pg_4_0
+	{
+		top : 12%;
+	}
+	#content_pg_4_0
+	{		
+		top : 12%;
+		margin-left : 8%;
+		margin-right : 8%;
+		padding : .5%;
+	}
+	#img_pg_4_0
+	{
+		
+		height : 100px;
+		width :  100px;
+		float : right;
+		margin-top : 4%;
+		margin-right :4%;
+		bottom : 0;
+	}
+	#img_pg_4_1
+	{
+		height : 100px;
+		width :  100px;
+		float : right;
+		margin-top : 4%;
+		margin-right :4%;
+		bottom : 0;
+	}
+	#img_pg_4_2
+	{
+		height : 100px;
+		width :  100px;
+		float : right;
+		margin-top : 4%;
+		margin-right :4%;
+		bottom : 0;
+	}
+	.hhw h3
+	{
+		font-size : 125%;
+	}
+
+	.hhw p
+	{
+		font-size : 85%;	
+	}
+	#section_4 .fp-controlArrow.fp-next
+	{
+		top : 28%;
+		right : 20%;
+		transform: scale(.7, .7);	
+	}
+	#section_4 .fp-controlArrow.fp-prev
+	{
+	top : 28%;
+		left : 20%;
+		transform: scale(.7, .7);			
+	}	
+		#left_key
+	{
+		top : 50%;
+		left :8%;
+		transform: scale(.5, .5);
+	}
+	
+	#right_key
+	{		
+		top : 50%;
+		right :8%;	
+		transform: scale(.5, .5);
+	}
+	#footer_container p
+	{
+		font-size : 45%;
+	}
+	
+	#lab_main_sec
+	{
+		margin-top: 7%;
+		margin-left : 8%;
+	}
+	#lab_heading h2
+	{	
+		font-size : 150%;
+	}
+
+	#lab_content p
+	{
+		font-size : 80%;
+	}
+	#lab_content img 
+	{
+		margin-top : -2%;
+		width : 10%;
+		height : 10%;
+	}
+
+	#new_to_my_arsenal_tab
+	{
+		
+		width :84%;
+		margin-left : 8%;	
+		margin-top : 4%;
+	}
+
+	#new_to_my_arsenal_tab h3
+	{
+		font-size : 100%;
+		line-height :0;
+		padding-bottom :0;
+	}
+
+
+	.r_topic h5
+	{
+		font-size : 85%;
+	}
+	.r_topic p
+	{
+		
+		font-size : 75%;
+	}
+	
+	.exp
+	{
+		width : 15%;
+		height : auto;
+		margin-bottom :.5%;		
+	}
+	.exp h2
+	{
+		font-size :100%;
+		padding-top :1%;		
+	}
+	.exp_main_content
+	{
+		width : 100%;
+		padding-bottom :8%;
+	}
+
+	.exp_image
+	{
+		width : 100%;	
+	}
+	.exp_image img
+	{
+		width : 100%;
+		height : 100%;
+	}
+	.exp_content
+	{
+		width :100%;
+		padding-left :2%;
+		padding-right :1%;		
+	}
+	.exp_content p 
+	{
+		font-size : 80%;
+	}
+	#left_arrow
+	{
+		top :30%;
+		left :15%;
+		transform : scale(.7,.7);
+	}
+	#right_arrow
+	{
+		top :30%;
+		right :15%;
+		transform : scale(.7,.7);
+	}
+	#about_game_content
+	{
+		width : 70%;
+		height : auto;
+		margin-left :15%;
+	}
+	#about_game_content	 h1
+	{		
+		font-size : 140%;
+	}
+	#about_game_content	 p
+	{
+		font-size : 80%;
+	}
+	#battle_of_champs_container
+	{
+		width : 70%;	
+		margin-top : 5%;
+		margin-left : 10%;
+		padding-left : 5%;
+		padding-right : 5%;
+	}
+	#battle_of_champs_container h2
+	{
+		font-size :210%;
+		line-height :.7;
+	}
+
+	#battle_of_champs_container p
+	{
+		font-size : 75%;
+	}
+	#content_boc h4
+	{
+		font-size:85%;
+	}
+	#contact_heading
+	{
+		width :25%;
+		height : auto;
+		padding-left : 10%;
+	}
+	#contact_heading h1
+	{
+		font-size : 120%;
+	}
+	#contact_heading img 
+	{
+		right : 0;
+		width : 15%;
+		height : 15%;
+		margin-left : 4%;
+		padding-top : 4%;
+	}
+	#contact_content 
+	{
+		padding-top : 2%;
+		margin-left : 10%;	
+	}
+	#contact_content input 
+	{
+		width : 28%;
+		font-size : 95%;
+		margin-bottom : 4%;
+		padding-left : 1%;
+		padding-bottom :.5%;
+		border-bottom : 1px solid white;
+	}
+	#contact_content textarea
+	{
+		font-size : 90%;
+		padding-left : 1%;
+		width : 36%;
+		height : 90px;
+		padding-top : 1%;
+	}
+
+	#contact_content h3
+	{
+		font-size : 95%;
+		margin-left : 45%;
+		margin-top : 1.5%;
+		width : 10%;
+		padding : .5%;
+		cursor : pointer;
+	}
+
+
+							
+	#main_dynamic_bgimage_1
+	{
+		width : 50%;
+		height : 50%;
+		margin-left : 25%;
+		margin-top : 3%;
+		box-shadow : 8px 8px 30px;
+	}
+	#main_dynamic_bgimage_2
+	{
+		width : 50%;
+		height : 50%;
+		margin-left : 25%;
+		margin-top : 3%;
+		box-shadow : 8px 8px 30px;
+	}
+
+	#main_dynamic_bgimage_3
+	{
+		width : 50%;
+		height : 50%;
+		margin-left : 25%;
+		margin-top : 3%;
+		box-shadow : 8px 8px 30px;
+	}
+	#main_page_content_1
+	{
+		width : 80%;
+		text-align :center;
+		margin-left :10%;
+
+	}
+	#main_page_content_1 p
+	{
+		font-size : 90%;
+	}
+
+	#proj_1_heading
+	{
+		font-size : 220%;
+		text-shadow : 6px 6px 10px black;
+		left :12%;
+		top : 44%;
+	}
+
+	#case_study_container_1
+	{
+		width : 90%;
+		height : auto;
+		padding-left : 5%;
+		padding-right:5%;
+		margin-top :.5%;
+	}	
+	#case_study_heading_1 h3 
+	{
+		font-size : 100%;
+	}	
+
+	#case_study_content_1 p
+	{
+		font-size : 90%;
+	}
+
+	#color_augmented_1
+	{
+		width : 90%;
+		height : auto;
+		padding-left : 5%;
+		padding-right:5%;
+	}
+	#color_augmented_heading_1 h3
+	{
+		font-size : 100%;
+	}
+	#color_augmented_content
+	{
+		width :100%;
+		height :auto;
+		margin-top : 3%;
+	}
+	.color_pallete
+	{
+		width : 50px;
+		height : 50px;
+		border-radius : 200px;
+		box-shadow : 6px 6px 25px ;
+		margin-left :2%;
+		margin-right :2%;
+	}
+	#font_container
+	{
+		width : 90%;
+		padding-left : 5%;
+		padding-right:5%;
+		height : auto;
+		margin-top :4%;
+	}
+
+	#font_family_heading_1 h3
+	{
+		font-size : 110%;
+	}
+	#font_family_content_1 h5:nth-child(1)
+	{
+		font-size : 90%;
+		margin-right : 2%;
+	}
+
+	#font_family_content_1 h5:nth-child(2)
+	{
+		font-size : 90%;
+	}
+
+	#features_container_1
+	{
+		width : 90%;
+		padding-left :5%;
+		padding-right : 5%;
+	}
+
+	#features_heading_1	h3
+	{
+		font-size:100%;
+	}
+	#feature_content_1
+	{
+		width : 100%;
+		height : auto;
+	}
+	.feature
+	{
+		width : 23%;
+		margin-left :1%;
+		margin-right :1%;
+		
+	}
+	.feature img 
+	{
+		width : 18%;
+	}
+	.feature p
+	{
+		font-size : 70%;
+	}
+
+	#framework_used_container_1
+	{
+		width : 90%;
+		padding-left : 5%;
+		padding-right : 5%;
+	}
+
+	#framework_used_heading_1 h3
+	{
+		font-size : 90%;
+		width :100%;
+		height :auto;
+	}
+	#framework_used_content_1 
+	{
+		height : auto;
+		width : 100%;	
+	}
+	#framework_used_content_1 img 
+	{
+		width : 4%;
+		left :0;
+	}
+
+	#conclusion_container_1
+	{
+		margin-top : 8%;
+		width : 90%;
+		padding-left :5%;
+		padding-right : 5%;
+	}
+	#conclusion_heading_1 h3 
+	{
+		font-size :90%;
+	}
+	#conclusion_content_1 
+	{
+		width : 100%;
+		height : auto;	
+	}
+	#conclusion_content_1 p
+	{
+		font-size : 70%;
+	}
+}
+
+/*-----------------------------MEDIA QUERIES FOR 640PXS --------------------------------------*/
+@media  screen and (max-width: 640px)  
+{
+
+	 .header_nav_tabs
+	{
+		font-size :40%;	
+	}
+	#section_1
+	{
+		padding-top : 15%;
+	}
+	#section_1  h1:nth-child(1) 
+	{
+		font-size : 80%;
+	}
+	#section_1  h1:nth-child(2) 
+	{
+		font-size :210%;
+		padding-left :.5%;
+	}
+	.typed-cursor
+	{
+		font-size :400%;
+	}
+	#what_we_do_content h1
+	{		
+		font-size : 160%;		
+	}
+	#what_we_do_content p
+	{
+		padding-left : 18%;
+		padding-right :18%;
+		font-size : 116%;
+	}	
+	#wwd_tabs
+	{
+		display : none;
+	}
+	#services_content h1
+	{
+		font-size : 110%;
+	}
+	#services_tab_1 h3
+	{
+		font-size : 50%;
+		
+	}
+	#services_tab_1 p
+	{
+		font-size : 50%;
+	}
+	#services_tab_2 h3
+	{
+		font-size : 50%;
+		
+	}
+	#services_tab_2 p
+	{
+		font-size : 50%;
+	}
+
+	.services_tabs_image img
+	{
+			height :13%;
+			width : 13%;
+	}	
+	#slide_fixed_bg h3
+	{
+		font-size : 100%;		
+		padding-top : 5%;
+	}
+	#heading_pg_4_0
+	{
+		top : 12%;
+	}
+	#content_pg_4_0
+	{		
+		top : 12%;
+		margin-left : 8%;
+		margin-right : 8%;
+		padding : .5%;
+	}
+	#img_pg_4_0
+	{
+		
+		height : 75px;
+		width :  75px;
+		float : right;
+		margin-top : 4%;
+		margin-right :4%;
+		bottom : 0;
+	}
+	#img_pg_4_1
+	{
+		height : 75px;
+		width :  75px;
+		float : right;
+		margin-top : 4%;
+		margin-right :4%;
+		bottom : 0;
+	}
+	#img_pg_4_2
+	{
+		height : 75px;
+		width :  75px;
+		float : right;
+		margin-top : 4%;
+		margin-right :4%;
+		bottom : 0;
+	}
+	.hhw h3
+	{
+		font-size : 100%;	
+	}
+
+	.hhw p
+	{
+		font-size : 70%;	
+	}
+	#section_4 .fp-controlArrow.fp-next
+	{
+		top : 28%;
+		right : 20%;
+		transform: scale(.60, .60);	
+	}
+	#section_4 .fp-controlArrow.fp-prev
+	{
+		top : 28%;
+		left : 20%;
+		transform: scale(.60, .60);		
+	}	
+		#left_key
+	{
+		top : 50%;
+		left :8%;
+		transform: scale(.4, .4);
+	}
+	
+	#right_key
+	{		
+		top : 50%;
+		right :8%;	
+		transform: scale(.4, .4);
+	}
+	#footer_container p
+	{
+		font-size : 35%;
+	}
+	#lab_main_sec
+	{
+		margin-top: 7%;
+		margin-left : 8%;
+	}
+	#lab_heading h2
+	{	
+		font-size : 130%;
+	}
+
+	#lab_content p
+	{
+		font-size : 70%;
+	}
+	#lab_content img 
+	{
+		margin-top : -1%;
+		width : 9%;
+		height : 9%;
+	}
+
+	#new_to_my_arsenal_tab
+	{
+		
+		width :84%;
+		margin-left : 8%;	
+		margin-top : 4%;
+	}
+
+	#new_to_my_arsenal_tab h3
+	{
+		font-size : 80%;
+		line-height :0;
+		padding-bottom :0;
+	}
+
+
+	.r_topic h5
+	{
+		font-size : 65%;
+	}
+	.r_topic p
+	{
+		
+		font-size : 55%;
+	}
+	.exp
+	{
+		width : 15%;
+		height : auto;
+		margin-bottom :.5%;		
+	}
+	.exp h2
+	{
+		font-size :80%;
+		padding-top :1%;		
+	}
+	.exp_main_content
+	{
+		width : 100%;
+		padding-bottom :8%;
+	}
+
+	.exp_image
+	{
+		width : 100%;	
+	}
+	.exp_image img
+	{
+		width : 100%;
+		height : 100%;
+	}
+	.exp_content
+	{
+		width :100%;
+		padding-left :2%;
+		padding-right :1%;		
+	}
+	.exp_content p 
+	{
+		font-size : 65%;
+	}
+	#left_arrow
+	{
+		top :30%;
+		left :14%%;
+		transform : scale(.6,.6);
+	}
+	#right_arrow
+	{
+		top :30%;
+		right :14%;
+		transform : scale(.6,.6);
+	}
+	#about_game_content
+	{
+		width : 70%;
+		height : auto;
+		margin-left :15%;
+	}
+	#about_game_content	 h1
+	{		
+		font-size : 110%;
+	}
+	#about_game_content	 p
+	{
+		font-size : 60%;
+	}
+	#battle_of_champs_container
+	{
+		width : 70%;	
+		margin-top : 5%;
+		margin-left : 10%;
+		padding-left : 5%;
+		padding-right : 5%;
+	}
+	#battle_of_champs_container h2
+	{
+		font-size :150%;
+		line-height :.7;
+	}
+
+	#battle_of_champs_container p
+	{
+		font-size : 70%;
+	}
+	#content_boc h4
+	{
+		font-size:80%;
+	}
+	#contact_heading
+	{
+		width :25%;
+		height : auto;
+		padding-left : 10%;
+	}
+	#contact_heading h1
+	{
+		font-size : 90%;
+	}
+	#contact_heading img 
+	{
+		right : 0;
+		width : 14%;
+		height : 14%;
+		margin-left : 4%;
+		padding-top : 4%;
+	}
+	#contact_content 
+	{
+		padding-top : 2%;
+		margin-left : 10%;	
+	}
+	#contact_content input 
+	{
+		width : 25%;
+		font-size : 75%;
+		margin-bottom : 4%;
+		padding-left : 1%;
+		padding-bottom :.5%;
+		border-bottom : 1px solid white;
+	}
+	#contact_content textarea
+	{
+		font-size : 70%;
+		padding-left : 1%;
+		width : 33%;
+		height : 70px;
+		padding-top : 1%;
+	}
+
+	#contact_content h3
+	{
+		font-size : 65%;
+		margin-left : 45%;
+		margin-top : 1%;
+		width : 10%;
+		padding : .5%;
+		cursor : pointer;
+	}
+	
+	
+								
+	#main_dynamic_bgimage_1
+	{
+		width : 50%;
+		height : 50%;
+		margin-left : 25%;
+		margin-top : 3%;
+		box-shadow : 8px 8px 30px;
+	}
+	#main_dynamic_bgimage_2
+	{
+		width : 50%;
+		height : 50%;
+		margin-left : 25%;
+		margin-top : 3%;
+		box-shadow : 8px 8px 30px;
+	}
+
+	#main_dynamic_bgimage_3
+	{
+		width : 50%;
+		height : 50%;
+		margin-left : 25%;
+		margin-top : 3%;
+		box-shadow : 8px 8px 30px;
+	}
+	#main_page_content_1
+	{
+		width : 80%;
+		text-align :center;
+		margin-left :10%;
+
+	}
+	#main_page_content_1 p
+	{
+		font-size : 70%;
+	}
+
+	#proj_1_heading
+	{
+		font-size : 180%;
+		text-shadow : 6px 6px 10px black;
+		left :12%;
+		top : 44%;
+	}
+
+	#case_study_container_1
+	{
+		width : 90%;
+		height : auto;
+		padding-left : 5%;
+		padding-right:5%;
+		margin-top :.5%;
+	}	
+	#case_study_heading_1 h3 
+	{
+		font-size : 85%;
+	}	
+
+	#case_study_content_1 p
+	{
+		font-size : 70%;
+	}
+
+	#color_augmented_1
+	{
+		width : 90%;
+		height : auto;
+		padding-left : 5%;
+		padding-right:5%;
+	}
+	#color_augmented_heading_1 h3
+	{
+		font-size : 70%;
+	}
+	#color_augmented_content
+	{
+		width :100%;
+		height :auto;
+		margin-top : 3%;
+	}
+	.color_pallete
+	{
+		width : 35px;
+		height : 35px;
+		border-radius : 200px;
+		box-shadow : 6px 6px 25px ;
+		margin-left :2%;
+		margin-right :2%;
+	}
+	#font_container
+	{
+		width : 90%;
+		padding-left : 5%;
+		padding-right:5%;
+		height : auto;
+		margin-top :4%;
+	}
+
+	#font_family_heading_1 h3
+	{
+		font-size : 85%;
+	}
+	#font_family_content_1 h5:nth-child(1)
+	{
+		font-size : 70%;
+		margin-right : 2%;
+	}
+
+	#font_family_content_1 h5:nth-child(2)
+	{
+		font-size : 70%;
+	}
+
+	#features_container_1
+	{
+		width : 90%;
+		padding-left :5%;
+		padding-right : 5%;
+	}
+
+	#features_heading_1	h3
+	{
+		font-size:80%;
+	}
+	#feature_content_1
+	{
+		width : 100%;
+		height : auto;
+	}
+	.feature
+	{
+		width : 23%;
+		margin-left :1%;
+		margin-right :1%;
+		
+	}
+	.feature img 
+	{
+		width : 16%;
+	}
+	.feature p
+	{
+		font-size : 55%;
+	}
+
+	#framework_used_container_1
+	{
+		width : 90%;
+		padding-left : 5%;
+		padding-right : 5%;
+	}
+
+	#framework_used_heading_1 h3
+	{
+		font-size : 75%;
+		width :100%;
+		height :auto;
+	}
+	#framework_used_content_1 
+	{
+		height : auto;
+		width : 100%;	
+	}
+	#framework_used_content_1 img 
+	{
+		width : 4%;
+		left :0;
+	}
+
+	#conclusion_container_1
+	{
+		margin-top : 8%;
+		width : 90%;
+		padding-left :5%;
+		padding-right : 5%;
+	}
+	#conclusion_heading_1 h3 
+	{
+		font-size :75%;
+	}
+	#conclusion_content_1 
+	{
+		width : 100%;
+		height : auto;	
+	}
+	#conclusion_content_1 p
+	{
+		font-size : 55%;
+	}
+}
+
+
+/*-----------------------------MEDIA QUERIES FOR 540PXS --------------------------------------*/
+@media  screen and (max-width: 540px)  
+{
+
+	 .header_nav_tabs
+	{
+		font-size :30%;	
+	}
+	#logo_id
+	{
+		width : 4%;
+		margin-top : 0.8%;
+	}
+	#section_1
+	{
+		padding-top : 12%;
+	}
+	#section_1  h1:nth-child(1) 
+	{
+		font-size : 70%;
+	}
+	#section_1  h1:nth-child(2) 
+	{
+		font-size :160%;
+		padding-left :.5%;
+	}
+	.typed-cursor
+	{
+		font-size :350%;
+	}
+	#what_we_do_content h1
+	{		
+		font-size : 140%;		
+	}
+	#what_we_do_content p
+	{
+		padding-left : 18%;
+		padding-right :18%;
+		font-size : 100%;
+	}	
+	#wwd_tabs
+	{
+		display : none;
+	}
+	#services_content h1
+	{
+		font-size : 90%;
+	}
+	#services_tab_1 h3
+	{
+		font-size : 50%;
+		
+	}
+	#services_tab_1 p
+	{
+		font-size :40%;
+	}
+	#services_tab_2 h3
+	{
+		font-size : 50%;
+		
+	}
+	#services_tab_2 p
+	{
+		font-size : 40%;
+	}
+
+	.services_tabs_image img
+	{
+			height :12%;
+			width : 12%;
+	}
+	#slide_fixed_bg h3
+	{
+		font-size : 75%;		
+		padding-top : 5%;
+	}
+	#heading_pg_4_0
+	{
+		top : 12%;
+	}
+	#content_pg_4_0
+	{		
+		top : 12%;
+		margin-left : 8%;
+		margin-right : 8%;
+		padding : .5%;
+	}
+	#img_pg_4_0
+	{
+		
+		height : 75px;
+		width :  75px;
+		float : right;
+		margin-top : 4%;
+		margin-right :4%;
+		bottom : 0;
+	}
+	#img_pg_4_1
+	{
+		height : 75px;
+		width :  75px;
+		float : right;
+		margin-top : 4%;
+		margin-right :4%;
+		bottom : 0;
+	}
+	#img_pg_4_2
+	{
+		height : 75px;
+		width :  75px;
+		float : right;
+		margin-top : 4%;
+		margin-right :4%;
+		bottom : 0;
+	}
+	.hhw h3
+	{
+		font-size : 75%;	
+	}
+
+	.hhw p
+	{
+		font-size : 60%;	
+	}
+	#section_4 .fp-controlArrow.fp-next
+	{
+		top : 28%;
+		right : 20%;
+		transform: scale(.5, .5);
+	}
+	#section_4 .fp-controlArrow.fp-prev
+	{
+		top : 28%;
+		left : 20%;
+		transform: scale(.5, .5);	
+	}	
+	#left_key
+	{
+		top : 40%;
+		left :8%;
+		transform: scale(.3, .3);
+	}
+	
+	#right_key
+	{		
+		top : 40%;
+		right :8%;	
+		transform: scale(.3, .3);
+	}
+	#footer_container p
+	{
+		font-size : 30%;
+	}
+	#lab_main_sec
+	{
+		margin-top: 7%;
+		margin-left : 8%;
+	}
+	#lab_heading h2
+	{	
+		font-size : 100%;
+	}
+
+	#lab_content p
+	{
+		font-size : 50%;
+	}
+	#lab_content img 
+	{
+		margin-top : -1%;
+		width : 9%;
+		height : 9%;
+	}
+
+	#new_to_my_arsenal_tab
+	{
+		
+		width :84%;
+		margin-left : 8%;	
+		margin-top : 4%;
+	}
+
+	#new_to_my_arsenal_tab h3
+	{
+		font-size : 60%;
+		line-height :0;
+		padding-bottom :0;
+	}
+
+
+	.r_topic h5
+	{
+		font-size : 55%;
+	}
+	.r_topic p
+	{
+		
+		font-size : 50%;
+	}
+	.exp
+	{
+		width : 15%;
+		height : auto;
+		margin-bottom :.5%;		
+	}
+	.exp h2
+	{
+		font-size :60%;
+		padding-top :1%;		
+	}
+	.exp_main_content
+	{
+		width : 100%;
+		padding-bottom :8%;
+	}
+
+	.exp_image
+	{
+		width : 100%;	
+	}
+	.exp_image img
+	{
+		width : 100%;
+		height : 100%;
+	}
+	.exp_content
+	{
+		width :100%;
+		padding-left :2%;
+		padding-right :1%;		
+	}
+	.exp_content p 
+	{
+		font-size : 50%;
+	}
+	#left_arrow
+	{
+		top :27%;
+		left :14%;
+		transform : scale(.5,.5);
+	}
+	#right_arrow
+	{
+		top :27%;
+		right :14%;
+		transform : scale(.5,.5);
+	}
+	#about_game_content
+	{
+		width : 70%;
+		height : auto;
+		margin-left :15%;
+	}
+	#about_game_content	 h1
+	{		
+		font-size : 90%;
+	}
+	#about_game_content	 p
+	{
+		font-size : 50%;
+	}
+	#battle_of_champs_container
+	{
+		width : 70%;	
+		margin-top : 5%;
+		margin-left : 10%;
+		padding-left : 5%;
+		padding-right : 5%;
+	}
+	#battle_of_champs_container h2
+	{
+		font-size :120%;
+		line-height :.7;
+	}
+
+	#battle_of_champs_container p
+	{
+		font-size : 60%;
+	}
+	#content_boc h4
+	{
+		font-size:60%;
+	}	
+	#contact_heading
+	{
+		width :25%;
+		height : auto;
+		padding-left : 10%;
+	}
+	#contact_heading h1
+	{
+		font-size : 70%;
+	}
+	#contact_heading img 
+	{
+		right : 0;
+		width : 13%;
+		height : 13%;
+		margin-left : 4%;
+		padding-top : 4%;
+	}
+	#contact_content 
+	{
+		padding-top : 2%;
+		margin-left : 10%;	
+	}
+	#contact_content input 
+	{
+		width : 20%;
+		font-size : 55%;
+		margin-bottom : 4%;
+		padding-left : 1%;
+		padding-bottom :.5%;
+		border-bottom : 1px solid white;
+	}
+	#contact_content textarea
+	{
+		font-size : 50%;
+		padding-left : 1%;
+		width : 25%;
+		height : 50px;
+		padding-top : 1%;
+	}
+
+	#contact_content h3
+	{
+		font-size : 55%;
+		margin-left : 45%;
+		margin-top : .5%;
+		width : 10%;
+		padding : .5%;
+		cursor : pointer;
+	}
+	
+	
+								
+	#main_dynamic_bgimage_1
+	{
+		width : 50%;
+		height : 50%;
+		margin-left : 25%;
+		margin-top : 3%;
+		box-shadow : 8px 8px 30px;
+	}
+	#main_dynamic_bgimage_2
+	{
+		width : 50%;
+		height : 50%;
+		margin-left : 25%;
+		margin-top : 3%;
+		box-shadow : 8px 8px 30px;
+	}
+
+	#main_dynamic_bgimage_3
+	{
+		width : 50%;
+		height : 50%;
+		margin-left : 25%;
+		margin-top : 3%;
+		box-shadow : 8px 8px 30px;
+	}
+	#main_page_content_1
+	{
+		width : 80%;
+		text-align :center;
+		margin-left :10%;
+
+	}
+	#main_page_content_1 p
+	{
+		font-size : 55%;
+	}
+
+	#proj_1_heading
+	{
+		font-size : 140%;
+		text-shadow : 6px 6px 10px black;
+		left :12%;
+		top : 44%;
+	}
+
+	#case_study_container_1
+	{
+		width : 90%;
+		height : auto;
+		padding-left : 5%;
+		padding-right:5%;
+		margin-top :.5%;
+	}	
+	#case_study_heading_1 h3 
+	{
+		font-size : 65%;
+	}	
+
+	#case_study_content_1 p
+	{
+		font-size : 55%;
+	}
+
+	#color_augmented_1
+	{
+		width : 90%;
+		height : auto;
+		padding-left : 5%;
+		padding-right:5%;
+	}
+	#color_augmented_heading_1 h3
+	{
+		font-size : 60%;
+	}
+	#color_augmented_content
+	{
+		width :100%;
+		height :auto;
+		margin-top : 3%;
+	}
+	.color_pallete
+	{
+		width : 30px;
+		height : 30px;
+		border-radius : 200px;
+		box-shadow : 6px 6px 25px ;
+		margin-left :2%;
+		margin-right :2%;
+	}
+	#font_container
+	{
+		width : 90%;
+		padding-left : 5%;
+		padding-right:5%;
+		height : auto;
+		margin-top :4%;
+	}
+
+	#font_family_heading_1 h3
+	{
+		font-size : 60%;
+	}
+	#font_family_content_1 h5:nth-child(1)
+	{
+		font-size : 60%;
+		margin-right : 2%;
+	}
+
+	#font_family_content_1 h5:nth-child(2)
+	{
+		font-size : 60%;
+	}
+
+	#features_container_1
+	{
+		width : 90%;
+		padding-left :5%;
+		padding-right : 5%;
+	}
+
+	#features_heading_1	h3
+	{
+		font-size:60%;
+	}
+	#feature_content_1
+	{
+		width : 100%;
+		height : auto;
+	}
+	.feature
+	{
+		width : 23%;
+		margin-left :1%;
+		margin-right :1%;
+		
+	}
+	.feature img 
+	{
+		width : 16%;
+	}
+	.feature p
+	{
+		font-size : 45%;
+	}
+
+	#framework_used_container_1
+	{
+		width : 90%;
+		padding-left : 5%;
+		padding-right : 5%;
+	}
+
+	#framework_used_heading_1 h3
+	{
+		font-size : 60%;
+		width :100%;
+		height :auto;
+	}
+	#framework_used_content_1 
+	{
+		height : auto;
+		width : 100%;	
+	}
+	#framework_used_content_1 img 
+	{
+		width : 4%;
+		left :0;
+	}
+
+	#conclusion_container_1
+	{
+		margin-top : 8%;
+		width : 90%;
+		padding-left :5%;
+		padding-right : 5%;
+	}
+	#conclusion_heading_1 h3 
+	{
+		font-size :60%;
+	}
+	#conclusion_content_1 
+	{
+		width : 100%;
+		height : auto;	
+	}
+	#conclusion_content_1 p
+	{
+		font-size : 40%;
+	}
+}
+
+
+/*-----------------------------MEDIA QUERIES FOR 480PXS --------------------------------------*/
+@media  screen and (max-width: 480px)  
+{
+
+	 .header_nav_tabs
+	{
+		font-size :20%;
+		
+	}
+	#logo_id
+	{
+			margin-top : -1%;	
+	}
+	#section_1
+	{
+		padding-top : 20%;
+	}
+	#section_1  h1:nth-child(1) 
+	{
+		font-size : 50%;
+	}
+	#section_1  h1:nth-child(2) 
+	{
+		font-size :120%;
+		padding-left :.5%;
+	}
+	.typed-cursor
+	{
+		font-size :170%	
+	}
+	#what_we_do_content h1
+	{		
+		font-size : 100%;		
+	}
+	#what_we_do_content p
+	{
+		padding-left : 18%;
+		padding-right :18%;
+		font-size : 60%;
+	}	
+	#wwd_tabs
+	{
+		display : none;
+	}
+	#services_content h1
+	{
+		font-size : 50%;
+	}
+	#services_tab_1 h3
+	{
+		font-size : 25%;
+		
+	}
+	#services_tab_1 p
+	{
+		font-size :25%;
+	}
+	#services_tab_2 h3
+	{
+		font-size : 25%;
+		
+	}
+	#services_tab_2 p
+	{
+		font-size : 25%;
+	}
+
+	.services_tabs_image img
+	{
+			height :10%;
+			width : 10%;
+	}
+	#slide_fixed_bg h3
+	{
+		font-size : 50%;		
+		padding-top : 5%;
+	}
+	#heading_pg_4_0
+	{
+		top : 12%;
+	}
+	#content_pg_4_0
+	{		
+		top : 12%;
+		margin-left : 8%;
+		margin-right : 8%;
+		padding : .5%;
+	}
+	#img_pg_4_0
+	{
+		
+		height : 40px;
+		width : 40px;
+		float : right;
+		margin-top : 4%;
+		margin-right :4%;
+		bottom : 0;
+	}
+	#img_pg_4_1
+	{
+			height : 40px;
+		width : 40px;
+		float : right;
+		margin-top : 4%;
+		margin-right :4%;
+		bottom : 0;
+	}
+	#img_pg_4_2
+	{
+			height : 40px;
+		width : 40px;
+		float : right;
+		margin-top : 4%;
+		margin-right :4%;
+		bottom : 0;
+	}
+	.hhw h3
+	{
+		font-size : 50%;	
+	}
+
+	.hhw p
+	{
+		font-size : 40%;	
+	}
+	#section_4 .fp-controlArrow.fp-next
+	{
+		position :absolute;
+		top : 27%;
+		right : 20%;
+		 transform: scale(.25, .25);
+	}
+	
+	#section_4 .fp-controlArrow.fp-prev
+	{
+		top : 27%;
+		left : 20%;
+		 transform: scale(.25, .25);	
+	}
+	#left_key
+	{
+		top : 35%;
+		left :8%;
+		transform: scale(.3, .3);
+	}
+	
+	#right_key
+	{		
+		top : 35%;
+		right :8%;	
+		transform: scale(.3, .3);
+	}
+#footer_container p
+	{
+		font-size : 20%;
+	}	
+	#lab_main_sec
+	{
+		margin-top: 7%;
+		margin-left : 8%;
+	}
+	#lab_heading h2
+	{	
+		font-size : 65%;
+	}
+
+	#lab_content p
+	{
+		font-size : 40%;
+	}
+	#lab_content img 
+	{
+		margin-top : -1%;
+		width : 7.5%;
+		height : 7.5%;
+	}
+
+	#new_to_my_arsenal_tab
+	{
+		
+		width :84%;
+		margin-left : 8%;	
+		margin-top : 4%;
+	}
+
+	#new_to_my_arsenal_tab h3
+	{
+		font-size : 45%;
+		line-height :0;
+		padding-bottom :0;
+	}
+
+
+	.r_topic h5
+	{
+		font-size : 35%;
+	}
+	.r_topic p
+	{
+		
+		font-size : 25%;
+	}
+	.exp
+	{
+		width : 15%;
+		height : auto;
+		margin-bottom :.5%;		
+	}
+	.exp h2
+	{
+		font-size :45%;
+		padding-top :1%;		
+	}
+	.exp_main_content
+	{
+		width : 100%;
+		padding-bottom :8%;
+	}
+
+	.exp_image
+	{
+		width : 100%;	
+	}
+	.exp_image img
+	{
+		width : 100%;
+		height : 100%;
+	}
+	.exp_content
+	{
+		width :100%;
+		padding-left :2%;
+		padding-right :1%;		
+	}
+	.exp_content p 
+	{
+		font-size : 28%;
+	}
+	#left_arrow
+	{
+		top :23%;
+		left :10%;
+		transform : scale(.3,.3);
+	}
+	#right_arrow
+	{
+		top :23%;
+		right :10%;
+		transform : scale(.3,.3);
+	}
+	#about_game_content
+	{
+		width : 70%;
+		height : auto;
+		margin-left :15%;
+	}
+	#about_game_content	 h1
+	{		
+		font-size : 70%;
+	}
+	#about_game_content	 p
+	{
+		font-size : 30%;
+	}
+	#battle_of_champs_container
+	{
+		width : 70%;	
+		margin-top : 4%;
+		margin-left : 10%;
+		padding-left : 5%;
+		padding-right : 5%;
+	}
+	#battle_of_champs_container h2
+	{
+		font-size :60%;
+		line-height :.4;
+	}
+
+	#battle_of_champs_container p
+	{
+		font-size : 30%;
+	}
+	#content_boc h4
+	{
+		font-size:50%;
+	}	
+	#contact_heading
+	{
+		width :25%;
+		height : auto;
+		padding-left : 10%;
+	}
+	#contact_heading h1
+	{
+		font-size : 50%;
+	}
+	#contact_heading img 
+	{
+		right : 0;
+		width : 13%;
+		height : 13%;
+		margin-left : 4%;
+		padding-top : 7%;
+	}
+	#contact_content 
+	{
+		padding-top : 2%;
+		margin-left : 10%;	
+	}
+	#contact_content input 
+	{
+		width : 30%;
+		font-size : 40%;
+		margin-bottom : 2%;
+		padding-left : 1%;
+		padding-bottom :.5%;
+		border-bottom : .5px solid white;
+	}
+	#contact_content textarea
+	{
+		font-size : 35%;
+		padding-left : 1%;
+		width : 25%;
+		height : 25px;
+		padding-top : 1%;
+	}
+
+	#contact_content h3
+	{
+		font-size : 30%;
+		margin-left : 45%;
+		margin-top : 0%;
+		width : 10%;
+		padding : .5%;
+		cursor : pointer;
+	}
+	
+	
+									
+	#main_dynamic_bgimage_1
+	{
+		width : 50%;
+		height : 50%;
+		margin-left : 25%;
+		margin-top : 3%;
+		box-shadow : 8px 8px 30px;
+	}
+	#main_dynamic_bgimage_2
+	{
+		width : 50%;
+		height : 50%;
+		margin-left : 25%;
+		margin-top : 3%;
+		box-shadow : 8px 8px 30px;
+	}
+
+	#main_dynamic_bgimage_3
+	{
+		width : 50%;
+		height : 50%;
+		margin-left : 25%;
+		margin-top : 3%;
+		box-shadow : 8px 8px 30px;
+	}
+	#main_page_content_1
+	{
+		width : 80%;
+		text-align :center;
+		margin-left :10%;
+
+	}
+	#main_page_content_1 p
+	{
+		font-size : 30%;
+	}
+
+	#proj_1_heading
+	{
+		font-size : 80%;
+		text-shadow : 6px 6px 10px black;
+		left :12%;
+		top : 44%;
+	}
+
+	#case_study_container_1
+	{
+		width : 90%;
+		height : auto;
+		padding-left : 5%;
+		padding-right:5%;
+		margin-top :.5%;
+	}	
+	#case_study_heading_1 h3 
+	{
+		font-size : 40%;
+	}	
+
+	#case_study_content_1 p
+	{
+		font-size : 30%;
+	}
+
+	#color_augmented_1
+	{
+		width : 90%;
+		height : auto;
+		padding-left : 5%;
+		padding-right:5%;
+	}
+	#color_augmented_heading_1 h3
+	{
+		font-size : 40%;
+	}
+	#color_augmented_content
+	{
+		width :100%;
+		height :auto;
+		margin-top : 3%;
+	}
+	.color_pallete
+	{
+		width : 15px;
+		height : 15px;
+		border-radius : 200px;
+		box-shadow : 6px 6px 25px ;
+		margin-left :2%;
+		margin-right :2%;
+	}
+	#font_container
+	{
+		width : 90%;
+		padding-left : 5%;
+		padding-right:5%;
+		height : auto;
+		margin-top :4%;
+	}
+
+	#font_family_heading_1 h3
+	{
+		font-size : 40%;
+	}
+	#font_family_content_1 h5:nth-child(1)
+	{
+		font-size : 30%;
+		margin-right : 2%;
+	}
+
+	#font_family_content_1 h5:nth-child(2)
+	{
+		font-size : 30%;
+	}
+
+	#features_container_1
+	{
+		width : 90%;
+		padding-left :5%;
+		padding-right : 5%;
+	}
+
+	#features_heading_1	h3
+	{
+		font-size:45%;
+	}
+	#feature_content_1
+	{
+		width : 100%;
+		height : auto;
+	}
+	.feature
+	{
+		width : 23%;
+		margin-left :1%;
+		margin-right :1%;
+		
+	}
+	.feature img 
+	{
+		width : 14%;
+	}
+	.feature p
+	{
+		font-size : 25%;
+	}
+
+	#framework_used_container_1
+	{
+		width : 90%;
+		padding-left : 5%;
+		padding-right : 5%;
+		display :none;
+	}
+
+	#framework_used_heading_1 h3
+	{
+		font-size : 35%;
+		width :100%;
+		height :auto;
+	}
+	#framework_used_content_1 
+	{
+		height : auto;
+		width : 100%;	
+	}
+	#framework_used_content_1 img 
+	{
+		width : 4%;
+		left :0;
+	}
+
+	#conclusion_container_1
+	{
+		margin-top : 0%;
+		width : 90%;
+		padding-left :5%;
+		padding-right : 5%;
+	}
+	#conclusion_heading_1 h3 
+	{
+		font-size :45%;
+	}
+	#conclusion_content_1 
+	{
+		width : 100%;
+		height : auto;	
+	}
+	#conclusion_content_1 p
+	{
+		font-size : 30%;
+	}
+}
